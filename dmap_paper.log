@@ -1,0 +1,1099 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.11.25)  16 MAR 2015 17:06
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**dmap_paper.tex -recorder
+(./dmap_paper.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
+(./mn2e.cls
+Document Class: mn2e 2001/02/06 v2.2 LaTeX2e MN document class
+Document Style `MN' v2.2, released 2001 February 20
+\math@groups=\toks14
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/cmsy/b/n on input line 223.
+\symbmisymbols=\mathgroup4
+\symUPM=\mathgroup5
+LaTeX Font Info:    Overwriting symbol font `UPM' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 260.
+\symAMSa=\mathgroup6
+\SFB@measure=\dimen102
+\realparindent=\skip41
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\@indentskip=\skip42
+\smallindent=\skip43
+\@footindent=\skip44
+\@leftskip=\skip45
+\c@dummy=\count85
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip46
+\bibsep=\skip47
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count86
+)
+\c@table=\count87
+\c@figure=\count88
+\mathindent=\dimen103
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count89
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks16
+LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 59.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `normal'
+(Font)                  U/msa/m/n --> U/msa/m/n on input line 59.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/msa/m/n --> U/msa/m/n on input line 59.
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+LaTeX Font Info:    Redeclaring math symbol \leqslant on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \geqslant on input line 108.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip48
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen106
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen107
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count90
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count91
+\leftroot@=\count92
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count93
+\DOTSCASE@=\count94
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
+\dotsspace@=\muskip10
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
+\tag@help=\toks18
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
+\andhelp@=\toks19
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks20
+\multlinegap=\skip49
+\multlinetaggap=\skip50
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen115
+\lightrulewidth=\dimen116
+\cmidrulewidth=\dimen117
+\belowrulesep=\dimen118
+\belowbottomsep=\dimen119
+\aboverulesep=\dimen120
+\abovetopsep=\dimen121
+\cmidrulesep=\dimen122
+\cmidrulekern=\dimen123
+\defaultaddspace=\dimen124
+\@cmidla=\count102
+\@cmidlb=\count103
+\@aboverulesep=\dimen125
+\@belowrulesep=\dimen126
+\@thisruleclass=\count104
+\@lastruleclass=\count105
+\@thisrulewidth=\dimen127
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
+\AP@output=\toks22
+\AP@partial=\box28
+\AP@footins=\box29
+)
+
+LaTeX Warning: Unused global option(s):
+    [a4paper].
+
+(./dmap_paper.aux)
+\openout1 = `dmap_paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count106
+\scratchdimen=\dimen128
+\scratchbox=\box30
+\nofMPsegments=\count107
+\nofMParguments=\count108
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count109
+\MPscratchDim=\dimen129
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
+\everyMPtoPDFconversion=\toks24
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for U+eur on input line 60.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueur.fd
+File: ueur.fd 2013/01/14 v3.01 Euler Roman
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 60.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 60.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (56.55618pt too wide) in paragraph at lines 60--60
+[][]  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 177.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 177.
+ [1{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+<figures/morphology_misclassification.png, id=21, 529.0164pt x 264.5082pt>
+File: figures/morphology_misclassification.png Graphic file (type png)
+
+<use figures/morphology_misclassification.png>
+Package pdftex.def Info: figures/morphology_misclassification.png used on input
+ line 180.
+(pdftex.def)             Requested size: 240.0pt x 120.00027pt.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.182 ...$-band for IPHAS field 4975o\_aug2004a} }
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.182 ...$-band for IPHAS field 4975o\_aug2004a} }
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<figures/theoretical_neighbours.pdf, id=23, 551.26251pt x 340.69896pt>
+File: figures/theoretical_neighbours.pdf Graphic file (type pdf)
+
+<use figures/theoretical_neighbours.pdf>
+Package pdftex.def Info: figures/theoretical_neighbours.pdf used on input line 
+384.
+(pdftex.def)             Requested size: 240.0pt x 148.3276pt.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.385 ...s containing varying numbers of sources.}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.385 ...s containing varying numbers of sources.}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<figures/neighbours_aquila.pdf, id=24, 1011.78pt x 361.35pt>
+File: figures/neighbours_aquila.pdf Graphic file (type pdf)
+
+<use figures/neighbours_aquila.pdf>
+Package pdftex.def Info: figures/neighbours_aquila.pdf used on input line 414.
+(pdftex.def)             Requested size: 504.0pt x 180.00188pt.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.417 ...y of fields increase from left to right.}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.417 ...y of fields increase from left to right.}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[2 <./figures/morphology_misclassification.png> <./figures/theoretical_neighbou
+rs.pdf>]
+<figures/confusion_completeness.pdf, id=44, 551.26251pt x 340.69896pt>
+File: figures/confusion_completeness.pdf Graphic file (type pdf)
+
+<use figures/confusion_completeness.pdf>
+Package pdftex.def Info: figures/confusion_completeness.pdf used on input line 
+444.
+(pdftex.def)             Requested size: 240.0pt x 148.3276pt.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.450 was placed on the magnitude of sources.}
+                                              
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.450 was placed on the magnitude of sources.}
+                                              
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./figures/neighbours_aquila.pdf> <./figures/confusion_completeness.pdf
+
+pdfTeX warning: pdflatex (file ./figures/confusion_completeness.pdf): PDF inclu
+sion: multiple pdfs with page group included in a single page
+>] <figures/neighbour_breakdown.pdf, id=99, 551.26251pt x 340.69896pt>
+File: figures/neighbour_breakdown.pdf Graphic file (type pdf)
+
+<use figures/neighbour_breakdown.pdf>
+Package pdftex.def Info: figures/neighbour_breakdown.pdf used on input line 482
+.
+(pdftex.def)             Requested size: 240.0pt x 148.3276pt.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.483 ...on \ref{eq:irwin_confusion} breaks down.}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.483 ...on \ref{eq:irwin_confusion} breaks down.}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<figures/magnitude_turnovers.pdf, id=100, 551.26251pt x 181.91663pt>
+File: figures/magnitude_turnovers.pdf Graphic file (type pdf)
+
+<use figures/magnitude_turnovers.pdf>
+Package pdftex.def Info: figures/magnitude_turnovers.pdf used on input line 537
+.
+(pdftex.def)             Requested size: 504.0pt x 166.3216pt.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.542 ...picked up in the $i^{\prime}$-band only.}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.542 ...picked up in the $i^{\prime}$-band only.}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+LaTeX Warning: Reference `subsec:completeness_ccd4' on page 4 undefined on inpu
+t line 566.
+
+[4 <./figures/neighbour_breakdown.pdf>]
+<figures/fitting_profiles.pdf, id=378, 722.7pt x 650.43pt>
+File: figures/fitting_profiles.pdf Graphic file (type pdf)
+
+<use figures/fitting_profiles.pdf>
+Package pdftex.def Info: figures/fitting_profiles.pdf used on input line 582.
+(pdftex.def)             Requested size: 240.0pt x 216.00224pt.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.586 a 2D elliptical Gaussian.}
+                                
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.586 a 2D elliptical Gaussian.}
+                                
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.593 \item
+            Flux
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.593 \item
+            Flux
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+Underfull \hbox (badness 1320) in paragraph at lines 602--603
+[]\OT1/cmr/m/n/9 Ideally mea-sur-ing the com-plete-ness us-ing ar-ti-fi-cial
+ []
+
+[5 <./figures/magnitude_turnovers.pdf> <./figures/fitting_profiles.pdf
+
+pdfTeX warning: pdflatex (file ./figures/fitting_profiles.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+>]
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.639 ...10 images containing artificial sources.}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.639 ...10 images containing artificial sources.}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.671 ...behaviours: \begin{itemize}\itemsep \item
+                                                   Source position returned
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.671 ...behaviours: \begin{itemize}\itemsep \item
+                                                   Source position returned
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<figures/parameter_fwhm.pdf, id=685, 551.26251pt x 340.69896pt>
+File: figures/parameter_fwhm.pdf Graphic file (type pdf)
+
+<use figures/parameter_fwhm.pdf>
+Package pdftex.def Info: figures/parameter_fwhm.pdf used on input line 686.
+(pdftex.def)             Requested size: 240.0pt x 148.3276pt.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.690 ...ons, and encompass the area $\pm\sigma$.}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.690 ...ons, and encompass the area $\pm\sigma$.}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<figures/parameter_ell.pdf, id=686, 551.26251pt x 340.69896pt>
+File: figures/parameter_ell.pdf Graphic file (type pdf)
+
+<use figures/parameter_ell.pdf>
+Package pdftex.def Info: figures/parameter_ell.pdf used on input line 706.
+(pdftex.def)             Requested size: 240.0pt x 148.3276pt.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.711 ... field as determined by \textsc{imcore.}}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.711 ... field as determined by \textsc{imcore.}}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[7 <./figures/parameter_fwhm.pdf> <./figures/parameter_ell.pdf
+
+pdfTeX warning: pdflatex (file ./figures/parameter_ell.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+>] <figures/magdiff_parameters.pdf, id=708, 722.7pt x 180.675pt>
+File: figures/magdiff_parameters.pdf Graphic file (type pdf)
+
+<use figures/magdiff_parameters.pdf>
+Package pdftex.def Info: figures/magdiff_parameters.pdf used on input line 778.
+
+(pdftex.def)             Requested size: 240.0pt x 60.00061pt.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.782 drop entirely.}}}
+                       
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.782 drop entirely.}}}
+                       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<figures/magnitude_match.pdf, id=709, 867.24pt x 289.08pt>
+File: figures/magnitude_match.pdf Graphic file (type pdf)
+
+<use figures/magnitude_match.pdf>
+Package pdftex.def Info: figures/magnitude_match.pdf used on input line 814.
+(pdftex.def)             Requested size: 240.0pt x 79.99788pt.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.816 ...effect of changing matching tolerance.}}}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.816 ...effect of changing matching tolerance.}}}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<figures/completeness_curves.pdf, id=710, 722.7pt x 361.35pt>
+File: figures/completeness_curves.pdf Graphic file (type pdf)
+
+<use figures/completeness_curves.pdf>
+Package pdftex.def Info: figures/completeness_curves.pdf used on input line 825
+.
+(pdftex.def)             Requested size: 504.0pt x 252.00043pt.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.826 ...aving out Capella-afflicted field pais!}}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.826 ...aving out Capella-afflicted field pais!}}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[8 <./figures/magdiff_parameters.pdf> <./figures/magnitude_match.pdf
+
+pdfTeX warning: pdflatex (file ./figures/magnitude_match.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+>] <figures/completeness_fits2.png, id=745, 722.7pt x 433.62pt>
+File: figures/completeness_fits2.png Graphic file (type png)
+
+<use figures/completeness_fits2.png>
+Package pdftex.def Info: figures/completeness_fits2.png used on input line 842.
+
+(pdftex.def)             Requested size: 240.0pt x 144.0015pt.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.843 ...i^{\prime}$ (\textbf{lower}) catalogues.}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.843 ...i^{\prime}$ (\textbf{lower}) catalogues.}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<figures/ccd_coverage.pdf, id=746, 551.26251pt x 496.13625pt>
+File: figures/ccd_coverage.pdf Graphic file (type pdf)
+
+<use figures/ccd_coverage.pdf>
+Package pdftex.def Info: figures/ccd_coverage.pdf used on input line 861.
+(pdftex.def)             Requested size: 240.0pt x 215.9992pt.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.862 ...axis of the WFC. CCD chips are numbered.}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.862 ...axis of the WFC. CCD chips are numbered.}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.869 \item
+            Morphology classification -1, -2 or +1
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.869 \item
+            Morphology classification -1, -2 or +1
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+[9 <./figures/completeness_curves.pdf> <./figures/completeness_fits2.png>]
+
+LaTeX Warning: Reference `subsec:completeness_fractions' on page 10 undefined o
+n input line 875.
+
+<figures/bright_stars.pdf, id=760, 551.26251pt x 340.69896pt>
+File: figures/bright_stars.pdf Graphic file (type pdf)
+
+<use figures/bright_stars.pdf>
+Package pdftex.def Info: figures/bright_stars.pdf used on input line 898.
+(pdftex.def)             Requested size: 453.59692pt x 280.34189pt.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.899 ...s colour, is scaled to visual magnitude.}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.899 ...s colour, is scaled to visual magnitude.}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<figures/dmap-cutout-30-40--5-5.pdf, id=761, 578.16pt x 433.62pt>
+File: figures/dmap-cutout-30-40--5-5.pdf Graphic file (type pdf)
+
+<use figures/dmap-cutout-30-40--5-5.pdf>
+Package pdftex.def Info: figures/dmap-cutout-30-40--5-5.pdf used on input line 
+914.
+(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
+
+<figures/dmap-cutout-80-90--5-5.pdf, id=762, 578.16pt x 433.62pt>
+File: figures/dmap-cutout-80-90--5-5.pdf Graphic file (type pdf)
+
+<use figures/dmap-cutout-80-90--5-5.pdf>
+Package pdftex.def Info: figures/dmap-cutout-80-90--5-5.pdf used on input line 
+915.
+(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
+
+<figures/dmap-cutout-170-180--5-5.pdf, id=763, 578.16pt x 433.62pt>
+File: figures/dmap-cutout-170-180--5-5.pdf Graphic file (type pdf)
+
+<use figures/dmap-cutout-170-180--5-5.pdf>
+Package pdftex.def Info: figures/dmap-cutout-170-180--5-5.pdf used on input lin
+e 916.
+(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.917 ...nus region. Lower: Anticentre sightline.}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.917 ...nus region. Lower: Anticentre sightline.}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Underfull \vbox (badness 2237) has occurred while \output is active []
+
+ [10 <./figures/ccd_coverage.pdf>]
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.936 ...e}$- and $i^{\prime}$-band density maps.}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.936 ...e}$- and $i^{\prime}$-band density maps.}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+<argument> ...\z@ \footnotesep \ignorespaces \url 
+                                                  {http://model.obs-besancon...
+l.948 ...note{\url{http://model.obs-besancon.fr/}}
+                                                  ,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[11 <./figures/bright_stars.pdf>]
+Missing character: There is no â in font cmbx9!
+Missing character: There is no € in font cmbx9!
+Missing character: There is no ¢ in font cmbx9!
+
+<figures/iphas_comparison.pdf, id=1300, 578.16pt x 361.35pt>
+File: figures/iphas_comparison.pdf Graphic file (type pdf)
+
+<use figures/iphas_comparison.pdf>
+Package pdftex.def Info: figures/iphas_comparison.pdf used on input line 987.
+(pdftex.def)             Requested size: 240.0pt x 149.99605pt.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.988 ...nts predicted by the Besan\c{c}on model.}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.988 ...nts predicted by the Besan\c{c}on model.}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[12 <./figures/dmap-cutout-30-40--5-5.pdf> <./figures/dmap-cutout-80-90--5-5.pd
+f
+
+pdfTeX warning: pdflatex (file ./figures/dmap-cutout-80-90--5-5.pdf): PDF inclu
+sion: multiple pdfs with page group included in a single page
+> <./figures/dmap-cutout-170-180--5-5.pdf
+
+pdfTeX warning: pdflatex (file ./figures/dmap-cutout-170-180--5-5.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+> <./figures/iphas_comparison.pdf
+
+pdfTeX warning: pdflatex (file ./figures/iphas_comparison.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+>] <figures/spiral_arms.pdf, id=2138, 686.565pt x 867.24pt>
+File: figures/spiral_arms.pdf Graphic file (type pdf)
+
+<use figures/spiral_arms.pdf>
+Package pdftex.def Info: figures/spiral_arms.pdf used on input line 999.
+(pdftex.def)             Requested size: 240.0pt x 303.1548pt.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.1000 ...ion are marked by gray hatched regions.}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\let \l@ngrel@x \relax \renew@command }\ETC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.1000 ...ion are marked by gray hatched regions.}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 1017--1018
+\OT1/cmr/m/n/9 The 3D map of Sale et al[] (2014) are the re-sult of
+ []
+
+[13 <./figures/spiral_arms.pdf>]
+
+LaTeX Warning: Command \r invalid in math mode on input line 1027.
+
+(./dmap_paper.bbl) [14] (./dmap_paper.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3297 strings out of 495063
+ 44436 string characters out of 3182200
+ 114440 words of memory out of 3000000
+ 6393 multiletter control sequences out of 15000+200000
+ 20496 words of font info for 74 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 38i,14n,34p,1048b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsl9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/cm-super/sfrm1200.pfb>
+Output written on dmap_paper.pdf (14 pages, 5262733 bytes).
+PDF statistics:
+ 2238 PDF objects out of 2487 (max. 8388607)
+ 329 compressed objects within 4 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+

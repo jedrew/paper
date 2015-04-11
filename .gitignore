@@ -1,0 +1,11 @@
+*.pyc
+
+# Large data files
+*.fits
+
+# tex
+*.aux
+*.bbl
+*.blg
+*.synctex.gz
+*.tex.bak
