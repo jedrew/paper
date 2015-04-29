@@ -75,14 +75,14 @@ Galaxy: stellar content -- extinction.
 \end{keywords}
 
 \section{Introduction}
-The positioning of the Solar System within the disk of the Milky
-Way places obstacles in the way of determining its organisation. 
-On the one hand, the Milky Way is an extremely large object in the night sky 
-circling the entire celestial sphere that offers better spatial resolution 
-than for any other disk-like galaxy. But on the other, sightlines 
+The Solar System's position within the disk of the Milky
+Way places obstacles in the way of testing our ideas about the organisation of 
+the latter.  On the one hand, the Milky Way is effectively an extremely large 
+object in the night sky circling the entire celestial sphere that offers better 
+spatial resolution than for any other disk-like galaxy. But on the other, sightlines 
 at the lowest Galactic latitudes are irregularly and sometimes heavily 
 obscured by interstellar dust for which the 3-dimensional distribution is 
-only now beginning to be explored (Drimmel \& Spergel 2002 - check, 
+only now beginning to be explored in detail (Drimmel \& Spergel 2002 - check, 
 Marshall et al 2006, Sale et al 2014).  
 
 It is to be hoped that the Gaia 
@@ -91,7 +91,7 @@ harvest that will do much to establish the 3-dimensional stellar
 distribution within the Milky Way's disk.  But this is the work of 5 or 
 more years from now, and the anticipated parallax precision ($10\mu$as at 
 $G \sim 15$) will still leave most stars beyond the first kiloparsec or so 
-without high-precision distance measures.  In these circumstances, it remains useful 
+without precise distance measures.  In these circumstances, it remains useful 
 to apply other methods to test predictive Galactic models.  One such 
 opportunity, putting to good use the uniquely detailed view we have of our 
 own Galaxy, is the exploitation of magnitude-limited star counts.  This 
@@ -103,7 +103,7 @@ So far, deeper optical star-count mapping has only been carried out in the
 southern Galactic plane (DENIS reference?).  The options to conduct a 
 well-calibrated stellar density mapping of the northern sky are now 
 appearing with the advent of digital imaging surveys (SDSS, Pan-STARRS - 
-refs).  The greater challenge is at low Galactic latitudes, but this is now 
+refs).  The greater challenge is at low Galactic latitudes, but this has become 
 tractable as the 1 arcsec angular-resolution IPHAS (Drew et al 2005), and 
 UVEX (Groot et al 2009) surveys approach completion.  In particular, the 
 recent release of IPHAS DR2 (Barentsen et al 2014), offering a uniform 
@@ -123,12 +123,10 @@ reasonably full description of how we arrive at the position- and
 magnitude-dependent corrections applied. 
 
 The completeness-corrected stellar density maps we obtain are then subjected 
-to some first comparisons with Galactic model predictions.  This is attempted 
-using more than one prescription of the 3-d distribution of interstellar 
-extinction.  This experimentation, along with the comparisons in two distinct 
-photospheric bands provides some first insights into how the discrepancies 
-identified may arise. It is encouraging, however, that good matches are found 
-for the greater Galactic longitudes examined.
+to some first comparisons with Galactic model predictions, using more than one 
+prescription of the 3-d distribution of interstellar extinction, where possible.  
+Outside the Solar Circle ($\ell > 90^{\circ}$), the agreement is quite good -- but 
+at the lowest Galactic longitudes examined, significant discrepancies appear.
 
 Structure of paper (sections...)
 
@@ -169,11 +167,42 @@ Structure of paper (sections...)
 
 \section[]{Observations}
 
-\subsection{On the expected number density of extra-galactic sources}
+\subsection{The IPHAS photometry}
+
+The most recent release, DR2, of the INT/WFC Photometric H$\alpha$ Survey of the Northern Galactic Plane (IPHAS) was made by 
+Barentsen et al (2014).   Drew et al (2005) provided the basic specification of IPHAS.  This survey, conducted using the Wide Field
+Camera (WFC) mounted on the Isaac Newton Telescope (INT) in La Palma, provides photometry of the complete Northern Galactic Plane within 
+the latitude range $-5^{\circ} < b < +5^{circ}$, in narrow-band H$\alpha$ and broadband Sloan $r$ and $i$.  It is the 
+broadbands that are the focus of this paper.  The typical $5\sigma$ magnitude limit reached in the survey is 21.2 in $r$ and 
+20.0 in $i$, achieved at a median seeing of 1.1 arcsec.  The typical external photometric precision of DR2 is close to 0.03 
+magnitudes, as judged by comparisons with SDSS DR9 data.  In Galactic longitude terms this survey spans the range
+$30^{\circ} < \ell < 215^{\circ}$.  In time it will be fully complemented by the VPHAS+ survey (Drew et al 2014) covering 
+the Southern Galactic Plane and Bulge.  
+
+Whilst IPHAS is certainly uniform in its execution, the weather at the telescope represented an important variable.  The observations
+were obtained via standard allocations of time, with the result that a wide variety of observing conditions are captured in the 
+survey database.  Thanks to the opportunity to obtain repeats of fields exposed in poor conditions, it was possible to apply 
+quality cuts in the preparation of IPHAS DR2 so as to omit clearly inferior data, whilst still achieving over 92\% coverage of 
+the survey footprint.  But there is still a broad quality range within DR2 in terms of measured widths of the point spread 
+function (PSF), and limiting magnitude (for full details, see Barentsen et al 2014).  This variation, along with over a factor
+of ten variation in the observed stellar density across the Northern Plane (see figure ?? in Gonzalez-Solares et al 2008), 
+makes it important to restore uniformity to the measured star counts through careful position-dependent completeness 
+corrections.  Satisfying this requirement, along with the creation of an algorithmic approach that ensures reliable source 
+counting without duplication and with proper accounting for small gaps and inhomogeneities in the data, is the main and 
+not inconsiderable labour defining the task (Farnhill 2015, PhD Thesis).
+
+{\sl Hywel -- is there anything else you can think of that should have gone in above?  I think we should refer to your thesis.}
+
+
+\subsection{On morphological classification and the expected number density of extra-galactic sources}
 \label{subsec:galaxy_density}
 
 A fraction of sources detected in DR2 fields are known to be misclassified as 
-non-stellar towards field edges - this is due to distortion in their PSF further from the optical axis (OA) of the INT/WFC system. While this has a small impact on the final DR2 catalogues, which provides primary detections preferentially selected based on minimum distance to the optical axis, when counting stellar (morphological class -1) sources from a single field this issue becomes non-negligible. Fig. \ref{fig:misclassification} shows an example of a field suffering from this problem.
+non-stellar towards field edges - this is due to progressive distortion in their PSF with increasing distance from the 
+optical axis (OA) of the INT/WFC system. While this has a small impact on the final DR2 catalogues, which provides primary 
+detections preferentially selected based on minimum distance to the optical axis, when counting stellar (morphological class -1) 
+sources from a single field to produce a stellar density map this issue has to be tackled. Fig. \ref{fig:misclassification} 
+shows an example of a field suffering from this problem.
 
 \begin{figure}
 \begin{center}
@@ -186,12 +215,15 @@ and non-stellar ($rClass=+1$, red) in the $r^{\prime}$-band for IPHAS field 4975
 
 Assuming a constant ratio of stellar to non-stellar sources across a field,
 comparisons  between 5 sq. deg. regions at field centres and edges showed
-occasional misclassification of  several hundred sources. To determine the
-expected number of galaxies detected in a similar area, galaxy counts were taken from from \citet{Yasuda2001}, down to the 5$\sigma$ $r^{\prime}$- and
-$i^{\prime}$-band limits   of IPHAS, extinguished by the median \citet{Schlegel1998} extinction values for all fields (corrected by \citet{Schlafly2011} recalibration). Using median limiting magnitudes, $\sim 1$
-extragalactic source are expected per 5 sq. deg. region. It was therefore
-decided to include +1 classified sources for density mapping purposes - the
-losses that would be  suffered in fields similar to that depicted in Fig. \ref{fig:misclassification} would be much larger than  the contamination by galaxies.
+occasional misclassification of  several hundred sources. Of course, some of these objects are not misclassified -- they can
+be genuine examples of galaxies presenting extended PSF.  To determine the
+expected number of galaxies detected in a similar area, galaxy counts were taken from from \citet{Yasuda2001}, down to the 
+5$\sigma$ $r^{\prime}$- and $i^{\prime}$-band limits  of IPHAS, extinguished by the median \citet{Schlegel1998} extinction 
+values for all fields (corrected by \citet{Schlafly2011} recalibration). Using median limiting magnitudes, $\sim 1$
+extragalactic source is expected per 5 sq. deg. region. Against stellar densities typically orders of magnitude larger, this is
+very small.  It was therefore regarded as safe to include 'non-stellar' +1 classified sources for density mapping 
+purposes - the losses that would be  suffered on leaving them out, in fields similar to that depicted in 
+Fig. \ref{fig:misclassification}, are much larger than  the contamination by galaxies.
 
 % In the case where all point sources are accurately classified, the primary
 % source of extended objects would be galaxies - only a smaller fraction would be
@@ -304,11 +336,12 @@ losses that would be  suffered in fields similar to that depicted in Fig. \ref{f
 Genuine astronomical sources falling within IPHAS detection limits can fail to
 make it into the resulting photometric catalogues for a number of reasons.
 
-Detector issues, can prevent sources from being observed; bad columns and
-vignetting are known problems with the WFC. In the majority of such cases,
-missing sources will be picked up by the offset partner pointing, or an overlapping neighbouring field.
+Detector issues can prevent sources from being observed; bad columns and
+vignetting are known problems with the WFC. In the majority of such cases (but not quite all),
+missing sources will be picked up by the offset partner pointing, or an overlapping neighbouring 
+field.
 
-Obect losses which affect the final catalogue are those which
+Obect losses which affect the final star counts are those which {\sl Hywel - what did you have in mind here?}
 
 \subsection{Confusion}
 
