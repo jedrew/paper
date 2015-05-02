@@ -75,35 +75,38 @@ Galaxy: stellar content -- extinction.
 \end{keywords}
 
 \section{Introduction}
-The Solar System's position within the disk of the Milky
-Way places obstacles in the way of testing our ideas about the organisation of 
-the latter.  On the one hand, the Milky Way is effectively an extremely large 
-object in the night sky circling the entire celestial sphere that offers better 
-spatial resolution than for any other disk-like galaxy. But on the other, sightlines 
-at the lowest Galactic latitudes are irregularly and sometimes heavily 
-obscured by interstellar dust for which the 3-dimensional distribution is 
-only now beginning to be explored in detail (Drimmel \& Spergel 2002 - check, 
-Marshall et al 2006, Sale et al 2014).  
 
-It is to be hoped that the Gaia 
-mission, underway at the time of writing, will reap a great astrometric 
-harvest that will do much to establish the 3-dimensional stellar 
-distribution within the Milky Way's disk.  But this is the work of 5 or 
-more years from now, and the anticipated parallax precision ($10\mu$as at 
-$G \sim 15$) will still leave most stars beyond the first kiloparsec or so 
-without precise distance measures.  In these circumstances, it remains useful 
-to apply other methods to test predictive Galactic models.  One such 
-opportunity, putting to good use the uniquely detailed view we have of our 
-own Galaxy, is the exploitation of magnitude-limited star counts.  This 
-approach has been applied successfully in the past by (references) and it 
-has been influential in both guiding and testing the content of Galactic 
-models (references).  
+The positioning of the Solar System almost in the equatorial plane of the Milky
+Way places a significant obstacle in the way of our understanding our galaxy's  
+organisation. Despite the fact that the disc of the Milky Way is effectively 
+the largest object in the night sky, offering vastly superior angular resolution 
+compared to that achievable for any other galaxy, sightlines at low Galactic latitude 
+remain a challenge to decipher because of large and variable amounts of dust 
+extinction.  Given that the architecture and workings of galactic 
+discs is an important problem in galaxy evolution (review reference), an improved 
+vision of our own galactic disc is desirable -- as well as being of interest in its 
+own right.
+
+The reliable empirical determination of the 3-dimensional distribution of the Milky 
+Way's interstellar dust, needed to make sense of disc structure, is now becoming possible 
+through the increasingly sophisticated analyses of comprehensive digital survey data 
+(Drimmel \& Spergel 2002 - check, Marshall et al 2006, Sale et al 2009, 2014).  In the
+next 5-10 years, these advances will complement the astrometric harvest being gathered 
+by the Gaia mission and usher in a much better, sharper vision of the 3D Galactic disc.
+Nevertheless, the anticipated Gaia parallax precision ($10\mu$as at $G \sim 15$) will 
+still leave stars beyond the first 1--2 kpc with distances known to a precision of $\pm$
+(number) kpc.  Accordingly, it remains useful to supplement our knowledge through the 
+application of other methods that can test predictive Galactic models.  One of these, 
+that puts to good use the uniquely detailed view we have of the Galactic disc,
+is the exploitation of magnitude-limited star counts.  This approach has been applied 
+successfully in the past and it has been influential in both guiding and 
+testing the content of Galactic models (references).  
 
 So far, deeper optical star-count mapping has only been carried out in the 
 southern Galactic plane (DENIS reference?).  The options to conduct a 
 well-calibrated stellar density mapping of the northern sky are now 
 appearing with the advent of digital imaging surveys (SDSS, Pan-STARRS - 
-refs).  The greater challenge is at low Galactic latitudes, but this has become 
+refs).  The greater challenge is at low Galactic latitudes, but this is now 
 tractable as the 1 arcsec angular-resolution IPHAS (Drew et al 2005), and 
 UVEX (Groot et al 2009) surveys approach completion.  In particular, the 
 recent release of IPHAS DR2 (Barentsen et al 2014), offering a uniform 
@@ -112,23 +115,29 @@ $H\alpha$), provides the basis for a precise and deep stellar density map
 across almost 1800 square degrees.
 
 In this work, we describe the construction of $r$, $i$ stellar density maps at
-a range of angular resolutions, up to a maximum resolution of 1 square arcminute, 
+a range of resolutions, up to a maximum resolution of 1 square arcminute, 
 based on IPHAS DR2.  In order that this mapping is not hampered by variable 
 observing conditions and similarly variable source losses, great care has been 
 taken to make corrections for incompleteness and confusion by evaluating the 
 results of artificial source injection tailored to every survey field. Because 
-this technical process has so far only been discussed briefly in the 
+this technical process has so far only been discussed superficially in the 
 literature (see e.g. *ref* for the fullest description to date), we present a 
 reasonably full description of how we arrive at the position- and 
-magnitude-dependent corrections applied. 
+magnitude-dependent corrections applied.  This is presented in section 3 (after
+a brief restatement of the main features of the IPHAS survey in section 2).
 
-The completeness-corrected stellar density maps we obtain are then subjected 
-to some first comparisons with Galactic model predictions, using more than one 
-prescription of the 3-d distribution of interstellar extinction, where possible.  
-Outside the Solar Circle ($\ell > 90^{\circ}$), the agreement is quite good -- but 
-at the lowest Galactic longitudes examined, significant discrepancies appear.
+The way in which the corrected r, i stellar density maps are assembled is described in 
+section 4.  This includes the specifications of the maps and pointers on how to access 
+them.  In section 5, the maps are subjected to first comparisons with Galactic 
+model predictions.  This is attempted using distinct prescriptions of the 3-d 
+distribution of interstellar extinction in order to gain an impression of how influential 
+the choice of 3D extinction map can be.  Interestingly, the results from this limited
+exploration are already mixed. It is found that outside the Solar Circle ($\ell > 90^{\circ}$ 
+in the north), the agreement between star counts and model prediction is quite good 
+-- but at the lowest Galactic longitudes examined, significant discrepancies appear.  The
+paper ends in section 6 with a brief discussion of these first results and a summary.
 
-Structure of paper (sections...)
+
 
 % \begin{table*}
 %  \centering
@@ -167,42 +176,44 @@ Structure of paper (sections...)
 
 \section[]{Observations}
 
-\subsection{The IPHAS photometry}
+\subsection{IPHAS broad-band photometry}
 
-The most recent release, DR2, of the INT/WFC Photometric H$\alpha$ Survey of the Northern Galactic Plane (IPHAS) was made by 
-Barentsen et al (2014).   Drew et al (2005) provided the basic specification of IPHAS.  This survey, conducted using the Wide Field
-Camera (WFC) mounted on the Isaac Newton Telescope (INT) in La Palma, provides photometry of the complete Northern Galactic Plane within 
-the latitude range $-5^{\circ} < b < +5^{circ}$, in narrow-band H$\alpha$ and broadband Sloan $r$ and $i$.  It is the 
-broadbands that are the focus of this paper.  The typical $5\sigma$ magnitude limit reached in the survey is 21.2 in $r$ and 
-20.0 in $i$, achieved at a median seeing of 1.1 arcsec.  The typical external photometric precision of DR2 is close to 0.03 
-magnitudes, as judged by comparisons with SDSS DR9 data.  In Galactic longitude terms this survey spans the range
-$30^{\circ} < \ell < 215^{\circ}$.  In time it will be fully complemented by the VPHAS+ survey (Drew et al 2014) covering 
-the Southern Galactic Plane and Bulge.  
+The most recent release, DR2, of the INT/WFC Photometric H$\alpha$ Survey of the Northern Galactic Plane (IPHAS) was 
+presented by Barentsen et al (2014), while the basic specification of IPHAS was set down by Drew et al (2005).  This 
+survey, conducted using the Wide Field Camera (WFC) mounted on the Isaac Newton Telescope (INT) in La Palma, provides 
+photometry of the complete Northern Galactic Plane within the latitude range $-5^{\circ} < b < +5^{circ}$, in narrow-band 
+H$\alpha$ and broadband Sloan $r$ and $i$.  It is the broadbands that are the focus of this paper.  The typical 
+$5\sigma$ magnitude limit reached in the survey is 21.2 in $r$ and 20.0 in $i$, achieved at a median seeing of 1.1 arcsec.  
+The typical external photometric precision of DR2 is close to 0.03 magnitudes, as judged by comparisons with SDSS DR9 
+data.  In Galactic longitude terms this survey spans the range $30^{\circ} < \ell < 215^{\circ}$.  In time it will be 
+fully complemented by the VPHAS+ survey (Drew et al 2014) covering the Southern Galactic Plane and Bulge.  
 
-Whilst IPHAS is certainly uniform in its execution, the weather at the telescope represented an important variable.  The observations
-were obtained via standard allocations of time, with the result that a wide variety of observing conditions are captured in the 
-survey database.  Thanks to the opportunity to obtain repeats of fields exposed in poor conditions, it was possible to apply 
-quality cuts in the preparation of IPHAS DR2 so as to omit clearly inferior data, whilst still achieving over 92\% coverage of 
-the survey footprint.  But there is still a broad quality range within DR2 in terms of measured widths of the point spread 
-function (PSF), and limiting magnitude (for full details, see Barentsen et al 2014).  This variation, along with over a factor
-of ten variation in the observed stellar density across the Northern Plane (see figure ?? in Gonzalez-Solares et al 2008), 
-makes it important to restore uniformity to the measured star counts through careful position-dependent completeness 
-corrections.  Satisfying this requirement, along with the creation of an algorithmic approach that ensures reliable source 
-counting without duplication and with proper accounting for small gaps and inhomogeneities in the data, is the main and 
-not inconsiderable labour defining the task (Farnhill 2015, PhD Thesis).
+Whilst IPHAS is certainly uniform in its execution, the weather at the telescope represented an important variable.  The 
+observations were obtained via standard allocations of time, with the result that a wide variety of observing conditions 
+are captured in the survey database.  Thanks to the opportunity to obtain repeats of fields exposed in poor conditions, it 
+was possible to apply quality cuts in the preparation of IPHAS DR2 so as to omit clearly inferior data, whilst still 
+achieving over 92\% coverage of the survey footprint.  Even so, there is still a broad quality range within DR2 in terms 
+of both measured widths of the point spread function (PSF), and limiting magnitude (for full details, see Barentsen et al 
+2014).  This variation, along with over a factor of ten decline in the typical observed stellar density along the Northern 
+Plane from $\ell ~ 30^{\circ}$ out to th Anticentre (see figure ?? in Gonzalez-Solares et al 2008), makes it important to 
+restore uniformity to the measured star counts through careful position-dependent completeness corrections.  Achieving 
+this, along with the development and application of an algorithm that ensures reliable source 
+counting without duplication and proper accounting for small gaps and other irregularities in the data, is the main 
+labour defining the task (Farnhill 2015, PhD Thesis).
 
-{\sl Hywel -- is there anything else you can think of that should have gone in above?  I think we should refer to your thesis.}
+The first step in this process is to establish a working definition of a detected 'star' in the survey data.
 
 
 \subsection{On morphological classification and the expected number density of extra-galactic sources}
 \label{subsec:galaxy_density}
 
 A fraction of sources detected in DR2 fields are known to be misclassified as 
-non-stellar towards field edges - this is due to progressive distortion in their PSF with increasing distance from the 
-optical axis (OA) of the INT/WFC system. While this has a small impact on the final DR2 catalogues, which provides primary 
-detections preferentially selected based on minimum distance to the optical axis, when counting stellar (morphological class -1) 
-sources from a single field to produce a stellar density map this issue has to be tackled. Fig. \ref{fig:misclassification} 
-shows an example of a field suffering from this problem.
+non-stellar towards field edges - this is due to progressive distortion in the point spread function (PSF) with increasing 
+distance from the optical axis (OA) of the INT/WFC system. This pattern of behaviour has a small impact on the final DR2 
+catalogues, which provide primary detections that are selected according to a criterion of lowest distance to the optical 
+axis.  But when counting stellar (morphological class -1) sources from a single field to produce a stellar density map 
+the issue of progressive misclassification has to be tackled. Fig. \ref{fig:misclassification} 
+shows an example of a field exhibiting from this problem.
 
 \begin{figure}
 \begin{center}
@@ -213,16 +224,16 @@ and non-stellar ($rClass=+1$, red) in the $r^{\prime}$-band for IPHAS field 4975
 \end{center}
 \end{figure}
 
-Assuming a constant ratio of stellar to non-stellar sources across a field,
-comparisons  between 5 sq. deg. regions at field centres and edges showed
+Assuming a constant ratio of stellar to non-stellar sources applies in reality across any one field,
+comparisons between 5 sq. deg. regions at field centres and edges revealed
 occasional misclassification of  several hundred sources. Of course, some of these objects are not misclassified -- they can
-be genuine examples of galaxies presenting extended PSF.  To determine the
-expected number of galaxies detected in a similar area, galaxy counts were taken from from \citet{Yasuda2001}, down to the 
-5$\sigma$ $r^{\prime}$- and $i^{\prime}$-band limits  of IPHAS, extinguished by the median \citet{Schlegel1998} extinction 
-values for all fields (corrected by \citet{Schlafly2011} recalibration). Using median limiting magnitudes, $\sim 1$
-extragalactic source is expected per 5 sq. deg. region. Against stellar densities typically orders of magnitude larger, this is
-very small.  It was therefore regarded as safe to include 'non-stellar' +1 classified sources for density mapping 
-purposes - the losses that would be  suffered on leaving them out, in fields similar to that depicted in 
+be genuine examples of galaxies presenting extended morphologies.  To determine the
+expected number of galaxies detected in a similar area, galaxy counts were taken from \citet{Yasuda2001}, down to the 
+5$\sigma$ $r^{\prime}$- and $i^{\prime}$-band limits of IPHAS, and then extinguished by the median \citet{Schlegel1998} 
+extinction values for all fields (corrected by \citet{Schlafly2011} recalibration). Using median limiting magnitudes, 
+$\sim 1$ extragalactic source is expected per 5 sq. deg. region. Against stellar densities typically orders of magnitude 
+larger, this is very small.  It was therefore regarded as safe to include 'non-stellar' +1 classified sources for 
+density mapping purposes - the losses that would be  suffered on leaving them out, in fields similar to that depicted in 
 Fig. \ref{fig:misclassification}, are much larger than  the contamination by galaxies.
 
 % In the case where all point sources are accurately classified, the primary
@@ -330,35 +341,43 @@ Fig. \ref{fig:misclassification}, are much larger than  the contamination by gal
 % thereby counting a small number of galaxies.
 
 
-\section[]{Completeness corrections} 
+\section[]{Completeness correction} 
 \label{sec:completeness}
 
 Genuine astronomical sources falling within IPHAS detection limits can fail to
-make it into the resulting photometric catalogues for a number of reasons.
+appear in the resulting photometric catalogues for a number of reasons.   Detector issues can 
+prevent sources from being picked up: the WFC is a 4-CCD mosaic leaving gaps
+between the component detectors, and there are also bad columns and regions of
+vignetting that will hinder detection. In the majority of such cases (but not quite all),
+missing sources will be picked up in the offset partner pointing, or in the overlap with a 
+neighbouring field.
 
-Detector issues can prevent sources from being observed; bad columns and
-vignetting are known problems with the WFC. In the majority of such cases (but not quite all),
-missing sources will be picked up by the offset partner pointing, or an overlapping neighbouring 
-field.
-
-Obect losses which affect the final star counts are those which {\sl Hywel - what did you have in mind here?}
+More significant and pervasive losses which affect the final star counts are those
+due either to confusion at high stellar densities or to statistical sensitivity losses at the faint limit
+for detection.  In the Galactic plane at lower longitudes, where the stellar density in IPHAS can reach up
+to 500,000 per square degree, confusion will be especially important and liable to determine the effective 
+magnitude limit.  Both kinds of incompleteness are exacerbated by relatively poor seeing.  We first 
+consider confusion in some detail, before going on to describe our method of incompleteness correction.
 
 \subsection{Confusion}
 
-Confusion, the effect of background noise caused by unresolved sources, has been shown to scale with source density \citep{Condon1974}. For randomly distributed sources, the probability of finding a given number of nearest neighbours within a certain distance can be described by a Poisson distribution, which leads to the nearest neighbour distribution 
+Confusion, the effect of background noise caused by unresolved sources, scales with source density \citep{Condon1974}. 
+For randomly distributed sources, the probability of finding a given number of neighbours within a certain 
+distance can be described by a Poisson distribution, which leads to the nearest neighbour distribution 
 \begin{equation}
 n(\theta) = 2\rho^2\Omega\pi\theta\mathrm{e}^{-\rho\pi\theta^2}
 \label{eq:theoretical_neighbours}
 \end{equation}
 \noindent as presented in \citet{Bahcall1986}.
 
-Fig. \ref{fig:theoretical_neighbours} shows this distribution for an area with the effective area of the WFC field of view (0.29 sq. deg.) containing varying numbers of sources. It can be seen that increasing the density of sources increases the number of nearest neighbours at small separations, while
-suppressing the number at greater separations. This has the effect of decreasing the peak separation value, $\theta_{max}$.
-
-This distribution holds for a population of sources randomly distributed regardless of brightness. In practice, where the distribution of source
-brightnesses is described by a power law, the susceptibility of a source to
-confusion increases with decreasing brightness; a limiting faint magnitude must
-be chosen in order to define a meaningful confusion rate.
+Fig. \ref{fig:theoretical_neighbours} shows this distribution for an area with the effective area of the WFC field of 
+view (0.29 sq. deg.) containing varying numbers of sources. It can be seen that increasing the density of sources 
+increases the number of nearest neighbours at small separations, while suppressing the number at greater separations,
+thereby pulling in the peak separation value, $\theta_{max}$.  Equation~\ref{eq:theoretical_neighbours} holds for a 
+population of sources randomly 
+distributed regardless of brightness. In practice, where the distribution of source brightnesses is described by a 
+power law, the susceptibility of a source to confusion increases with decreasing brightness; a limiting faint magnitude 
+must be chosen in order to define a meaningful confusion rate.
 
 
 % \citet{Hogg2001} quote a
@@ -438,9 +457,10 @@ be chosen in order to define a meaningful confusion rate.
 % eliminates the complexity that would be introduced by comparing confusion of all
 % sources across fields with different depths.
 
-In order to reproduce the theoretical distribution (Eqn. \ref{eq:theoretical_neighbours}), all sources in the area $\Omega$ would need to be recovered. This will never be the case in dense fields, which will modify the observed distribution. The loss of a source to confusion is more likely once its PSF overlaps with that of its nearest neighbour (or indeed neighbours). As such
-the smallest separations will be under-reported in the distributions of dense
-IPHAS fields, where the average inter-source distance is at its lowest - sources at small separations will not be distinguished from one another. The apparent nearest neighbour recovered will therefore lie at a greater distance, boosting the numbers at larger values of $\theta$.
+In order to reproduce the theoretical distribution (Eqn. \ref{eq:theoretical_neighbours}), all sources in 
+the area $\Omega$ would need to be recovered. This will never be the case in dense fields, which will modify the 
+observed distribution in the sense that the smallest separations will be under-reported - appearing to relatively
+boost the proportion of nearest neighbouts at larger values of $\theta$.
 
 \begin{figure*}
 \begin{center}
@@ -452,21 +472,30 @@ normalised to allow the overplotting of theoretical distribution (dashed line).
 \end{center}
 \end{figure*}
 
-Three test cases can be seen in Fig. \ref{fig:iphasfield_neighbours}: these
-IPHAS fields, located around $\ell\sim32^{\circ}$, were chosen as they lay in a
+Three test cases are shown in Fig. \ref{fig:iphasfield_neighbours}: these
+IPHAS fields, located around $\ell\sim32^{\circ}$, were chosen because they lie in a
 region of the survey containing fields spanning a wide range of densities. The
 $n(\theta)$ distributions were generated by selecting subregions of the CCDs
 such that a border of width 30$^{\prime\prime}$ was excluded, and the nearest
 neighbour was identified for each of the sources in the central subregion. This
 approach was necessary to avoid the case where sources close to CCD edges have
 their nearest neighbour assigned to a source in the CCD area, when in fact its
-nearest neighbour on the sky is beyond the border of the image. When identifying the nearest neighbours for each source in the central region, matches from the border region were allowed.
+nearest neighbour on the sky is located beyond the detector edge. When identifying 
+the nearest neighbours for each source in the central region, the 
+border region was searched as well.
 
 The fields are displayed in order of increasing density. The left-most field,
-4198\_jul2004, contains 3,966 sources - a number sufficiently low that confusion would not be expected to make a significant contribution to incompleteness. Fields 4450o\_jul2009 and 4285\_jun2004, containing 24,291 and 49,150 sources respectively, suffer from increasing levels of confusion. The overplotted theoretical distribution gives an idea of the amount of confusion; at low field densities, the observed and theoretical distributions agree quite well, while at higher densities the theoretical distributions clearly predict closer nearest neighbours than are observed.
+4198\_jul2004, contains 3,966 sources - a number sufficiently low that confusion would 
+not be expected to make a significant contribution to incompleteness. Fields 
+4450o\_jul2009 and 4285\_jun2004, containing 24,291 and 49,150 sources respectively, 
+suffer from increasing levels of confusion. The overplotted theoretical distribution 
+gives an idea of the amount of confusion; at low field densities, the empirical and 
+theoretical distributions agree quite well, while at higher densities the theoretical 
+distributions clearly predict closer nearest neighbours than measured.
 
 While the observed nearest neighbour distribution is affected significantly by
-confusion most significantly at smaller ($\lesssim10^{\prime\prime}$) separations, the observed number of nearest neighbours at larger separations is
+confusion most significantly at smaller ($\lesssim10^{\prime\prime}$) separations, the 
+observed number of nearest neighbours at larger separations is
 less affected by confusion. The theoretical distribution which best fits the
 tail at large $\theta$ values should describe the field as if confusion were not an issue.
 
