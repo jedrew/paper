@@ -124,18 +124,18 @@ this technical process has so far only been discussed superficially in the
 literature (see e.g. *ref* for the fullest description to date), we present a 
 reasonably full description of how we arrive at the position- and 
 magnitude-dependent corrections applied.  This is presented in section 3 (after
-a brief restatement of the many features of the IPHAS survey in section 2).
+a brief restatement of the main features of the IPHAS survey in section 2).
 
 The way in which the corrected r, i stellar density maps are assembled is described in 
 section 4.  This includes the specifications of the maps and pointers on how to access 
-them.  In section 5, the maps we are subjected to some first comparisons with Galactic 
-model predictions.  This is attempted using more than one prescription of the 3-d 
+them.  In section 5, the maps are subjected to first comparisons with Galactic 
+model predictions.  This is attempted using distinct prescriptions of the 3-d 
 distribution of interstellar extinction in order to gain an impression of how influential 
 the choice of 3D extinction map can be.  Interestingly, the results from this limited
 exploration are already mixed. It is found that outside the Solar Circle ($\ell > 90^{\circ}$ 
 in the north), the agreement between star counts and model prediction is quite good 
 -- but at the lowest Galactic longitudes examined, significant discrepancies appear.  The
-paper ends in section 6 with a brief discussion and summary.
+paper ends in section 6 with a brief discussion of these first results and a summary.
 
 
 
@@ -341,36 +341,43 @@ Fig. \ref{fig:misclassification}, are much larger than  the contamination by gal
 % thereby counting a small number of galaxies.
 
 
-\section[]{Completeness corrections} 
+\section[]{Completeness correction} 
 \label{sec:completeness}
 
 Genuine astronomical sources falling within IPHAS detection limits can fail to
-appear in the resulting photometric catalogues for a number of reasons.
-
-Detector issues can prevent sources from being observed: the WFC is a 4-CCD mosaic leaving gaps
+appear in the resulting photometric catalogues for a number of reasons.   Detector issues can 
+prevent sources from being picked up: the WFC is a 4-CCD mosaic leaving gaps
 between the component detectors, and there are also bad columns and regions of
 vignetting that will hinder detection. In the majority of such cases (but not quite all),
 missing sources will be picked up in the offset partner pointing, or in the overlap with a 
 neighbouring field.
 
-Obect losses which affect the final star counts are those which {\sl Hywel - what did you have in mind here?}
+More significant and pervasive losses which affect the final star counts are those
+due either to confusion at high stellar densities or to statistical sensitivity losses at the faint limit
+for detection.  In the Galactic plane at lower longitudes, where the stellar density in IPHAS can reach up
+to 500,000 per square degree, confusion will be especially important and liable to determine the effective 
+magnitude limit.  Both kinds of incompleteness are exacerbated by relatively poor seeing.  We first 
+consider confusion in some detail, before going on to describe our method of incompleteness correction.
 
 \subsection{Confusion}
 
-Confusion, the effect of background noise caused by unresolved sources, has been shown to scale with source density \citep{Condon1974}. For randomly distributed sources, the probability of finding a given number of nearest neighbours within a certain distance can be described by a Poisson distribution, which leads to the nearest neighbour distribution 
+Confusion, the effect of background noise caused by unresolved sources, scales with source density \citep{Condon1974}. 
+For randomly distributed sources, the probability of finding a given number of neighbours within a certain 
+distance can be described by a Poisson distribution, which leads to the nearest neighbour distribution 
 \begin{equation}
 n(\theta) = 2\rho^2\Omega\pi\theta\mathrm{e}^{-\rho\pi\theta^2}
 \label{eq:theoretical_neighbours}
 \end{equation}
 \noindent as presented in \citet{Bahcall1986}.
 
-Fig. \ref{fig:theoretical_neighbours} shows this distribution for an area with the effective area of the WFC field of view (0.29 sq. deg.) containing varying numbers of sources. It can be seen that increasing the density of sources increases the number of nearest neighbours at small separations, while
-suppressing the number at greater separations. This has the effect of decreasing the peak separation value, $\theta_{max}$.
-
-This distribution holds for a population of sources randomly distributed regardless of brightness. In practice, where the distribution of source
-brightnesses is described by a power law, the susceptibility of a source to
-confusion increases with decreasing brightness; a limiting faint magnitude must
-be chosen in order to define a meaningful confusion rate.
+Fig. \ref{fig:theoretical_neighbours} shows this distribution for an area with the effective area of the WFC field of 
+view (0.29 sq. deg.) containing varying numbers of sources. It can be seen that increasing the density of sources 
+increases the number of nearest neighbours at small separations, while suppressing the number at greater separations,
+thereby pulling in the peak separation value, $\theta_{max}$.  Equation~\ref{eq:theoretical_neighbours} holds for a 
+population of sources randomly 
+distributed regardless of brightness. In practice, where the distribution of source brightnesses is described by a 
+power law, the susceptibility of a source to confusion increases with decreasing brightness; a limiting faint magnitude 
+must be chosen in order to define a meaningful confusion rate.
 
 
 % \citet{Hogg2001} quote a
@@ -450,9 +457,10 @@ be chosen in order to define a meaningful confusion rate.
 % eliminates the complexity that would be introduced by comparing confusion of all
 % sources across fields with different depths.
 
-In order to reproduce the theoretical distribution (Eqn. \ref{eq:theoretical_neighbours}), all sources in the area $\Omega$ would need to be recovered. This will never be the case in dense fields, which will modify the observed distribution. The loss of a source to confusion is more likely once its PSF overlaps with that of its nearest neighbour (or indeed neighbours). As such
-the smallest separations will be under-reported in the distributions of dense
-IPHAS fields, where the average inter-source distance is at its lowest - sources at small separations will not be distinguished from one another. The apparent nearest neighbour recovered will therefore lie at a greater distance, boosting the numbers at larger values of $\theta$.
+In order to reproduce the theoretical distribution (Eqn. \ref{eq:theoretical_neighbours}), all sources in 
+the area $\Omega$ would need to be recovered. This will never be the case in dense fields, which will modify the 
+observed distribution in the sense that the smallest separations will be under-reported - appearing to relatively
+boost the proportion of nearest neighbouts at larger values of $\theta$.
 
 \begin{figure*}
 \begin{center}
@@ -464,21 +472,30 @@ normalised to allow the overplotting of theoretical distribution (dashed line).
 \end{center}
 \end{figure*}
 
-Three test cases can be seen in Fig. \ref{fig:iphasfield_neighbours}: these
-IPHAS fields, located around $\ell\sim32^{\circ}$, were chosen as they lay in a
+Three test cases are shown in Fig. \ref{fig:iphasfield_neighbours}: these
+IPHAS fields, located around $\ell\sim32^{\circ}$, were chosen because they lie in a
 region of the survey containing fields spanning a wide range of densities. The
 $n(\theta)$ distributions were generated by selecting subregions of the CCDs
 such that a border of width 30$^{\prime\prime}$ was excluded, and the nearest
 neighbour was identified for each of the sources in the central subregion. This
 approach was necessary to avoid the case where sources close to CCD edges have
 their nearest neighbour assigned to a source in the CCD area, when in fact its
-nearest neighbour on the sky is beyond the border of the image. When identifying the nearest neighbours for each source in the central region, matches from the border region were allowed.
+nearest neighbour on the sky is located beyond the detector edge. When identifying 
+the nearest neighbours for each source in the central region, the 
+border region was searched as well.
 
 The fields are displayed in order of increasing density. The left-most field,
-4198\_jul2004, contains 3,966 sources - a number sufficiently low that confusion would not be expected to make a significant contribution to incompleteness. Fields 4450o\_jul2009 and 4285\_jun2004, containing 24,291 and 49,150 sources respectively, suffer from increasing levels of confusion. The overplotted theoretical distribution gives an idea of the amount of confusion; at low field densities, the observed and theoretical distributions agree quite well, while at higher densities the theoretical distributions clearly predict closer nearest neighbours than are observed.
+4198\_jul2004, contains 3,966 sources - a number sufficiently low that confusion would 
+not be expected to make a significant contribution to incompleteness. Fields 
+4450o\_jul2009 and 4285\_jun2004, containing 24,291 and 49,150 sources respectively, 
+suffer from increasing levels of confusion. The overplotted theoretical distribution 
+gives an idea of the amount of confusion; at low field densities, the empirical and 
+theoretical distributions agree quite well, while at higher densities the theoretical 
+distributions clearly predict closer nearest neighbours than measured.
 
 While the observed nearest neighbour distribution is affected significantly by
-confusion most significantly at smaller ($\lesssim10^{\prime\prime}$) separations, the observed number of nearest neighbours at larger separations is
+confusion most significantly at smaller ($\lesssim10^{\prime\prime}$) separations, the 
+observed number of nearest neighbours at larger separations is
 less affected by confusion. The theoretical distribution which best fits the
 tail at large $\theta$ values should describe the field as if confusion were not an issue.
 
