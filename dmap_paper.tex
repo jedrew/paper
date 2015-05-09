@@ -77,30 +77,30 @@ Galaxy: stellar content -- extinction.
 \section{Introduction}
 
 The positioning of the Solar System almost in the equatorial plane of the Milky
-Way places a significant obstacle in the way of our understanding our galaxy's  
-organisation. Despite the fact that the disc of the Milky Way is effectively 
+Way places a significant obstacle in the way of understanding the structure of our 
+own galaxy.  Despite the fact that the disc of the Milky Way is effectively 
 the largest object in the night sky, offering vastly superior angular resolution 
 compared to that achievable for any other galaxy, sightlines at low Galactic latitude 
 remain a challenge to decipher because of large and variable amounts of dust 
-extinction.  Given that the architecture and workings of galactic 
+extinction.  Given that the formation and maintenance of galactic 
 discs is an important problem in galaxy evolution (review reference), an improved 
-vision of our own galactic disc is desirable -- as well as being of interest in its 
-own right.
+vision of our own galactic disc is needed.  And as our wider home, it is of interest 
+in its own right.
 
 The reliable empirical determination of the 3-dimensional distribution of the Milky 
-Way's interstellar dust, needed to make sense of disc structure, is now becoming possible 
+Way's interstellar dust, needed to make sense of the disc, is now becoming possible 
 through the increasingly sophisticated analyses of comprehensive digital survey data 
 (Drimmel \& Spergel 2002 - check, Marshall et al 2006, Sale et al 2009, 2014).  In the
 next 5-10 years, these advances will complement the astrometric harvest being gathered 
 by the Gaia mission and usher in a much better, sharper vision of the 3D Galactic disc.
-Nevertheless, the anticipated Gaia parallax precision ($10\mu$as at $G \sim 15$) will 
-still leave stars beyond the first 1--2 kpc with distances known to a precision of $\pm$
-(number) kpc.  Accordingly, it remains useful to supplement our knowledge through the 
-application of other methods that can test predictive Galactic models.  One of these, 
-that puts to good use the uniquely detailed view we have of the Galactic disc,
-is the exploitation of magnitude-limited star counts.  This approach has been applied 
-successfully in the past and it has been influential in both guiding and 
-testing the content of Galactic models (references).  
+Nevertheless, the anticipated Gaia parallax precision at fainter magnitudes ($100\mu$arcsec 
+at $G \sim 19$) will still leave stars beyond the first 1--2 kpc with distances known to 
+a precision worse than ~10-20 percent.  Accordingly, it remains useful to supplement 
+our knowledge through the application of other methods that can test predictive Galactic 
+models.  One of these, that puts to good use the uniquely detailed view we have of the 
+Galactic disc, is the exploitation of magnitude-limited star counts.  This approach has 
+been applied successfully in the past and it has been influential in both guiding and 
+testing the content of Galactic models (Robin et al 2003, Czekaj et al 2014).  
 
 So far, deeper optical star-count mapping has only been carried out in the 
 southern Galactic plane (DENIS reference?).  The options to conduct a 
@@ -128,14 +128,16 @@ a brief restatement of the main features of the IPHAS survey in section 2).
 
 The way in which the corrected r, i stellar density maps are assembled is described in 
 section 4.  This includes the specifications of the maps and pointers on how to access 
-them.  In section 5, the maps are subjected to first comparisons with Galactic 
-model predictions.  This is attempted using distinct prescriptions of the 3-d 
-distribution of interstellar extinction in order to gain an impression of how influential 
-the choice of 3D extinction map can be.  Interestingly, the results from this limited
-exploration are already mixed. It is found that outside the Solar Circle ($\ell > 90^{\circ}$ 
-in the north), the agreement between star counts and model prediction is quite good 
--- but at the lowest Galactic longitudes examined, significant discrepancies appear.  The
-paper ends in section 6 with a brief discussion of these first results and a summary.
+them.  In $i$ band our map reaches down to 18th mag (Vega system), a limit that roughly
+corresponds to Gaia G $\sim$ 19 (see Appendix B).   In section 5, the maps are subjected 
+to first comparisons with Galactic model predictions.  This is attempted using distinct 
+prescriptions of the 3-d distribution of interstellar extinction in order to gain an 
+impression of how influential the choice of 3D extinction map can be.  Interestingly, the 
+results from this limited exploration are already mixed. It is found that outside the 
+Solar Circle ($\ell > 90^{\circ}$  in the north), the agreement between star counts and 
+model prediction is quite good -- but at the lowest Galactic longitudes examined, 
+significant discrepancies appear.  The paper ends in section 6 with a brief discussion of 
+these first results and a summary.
 
 
 
@@ -190,16 +192,16 @@ fully complemented by the VPHAS+ survey (Drew et al 2014) covering the Southern 
 
 Whilst IPHAS is certainly uniform in its execution, the weather at the telescope represented an important variable.  The 
 observations were obtained via standard allocations of time, with the result that a wide variety of observing conditions 
-are captured in the survey database.  Thanks to the opportunity to obtain repeats of fields exposed in poor conditions, it 
-was possible to apply quality cuts in the preparation of IPHAS DR2 so as to omit clearly inferior data, whilst still 
+are contained within the survey database.  Thanks to the opportunity to obtain repeats of fields exposed in poor conditions, 
+it was possible to apply quality cuts in the preparation of IPHAS DR2 so as to omit clearly inferior data, whilst still 
 achieving over 92\% coverage of the survey footprint.  Even so, there is still a broad quality range within DR2 in terms 
 of both measured widths of the point spread function (PSF), and limiting magnitude (for full details, see Barentsen et al 
 2014).  This variation, along with over a factor of ten decline in the typical observed stellar density along the Northern 
-Plane from $\ell ~ 30^{\circ}$ out to th Anticentre (see figure ?? in Gonzalez-Solares et al 2008), makes it important to 
+Plane from $\ell ~ 30^{\circ}$ out to the Anticentre (see figure 3 in Gonzalez-Solares et al 2008), makes it important to 
 restore uniformity to the measured star counts through careful position-dependent completeness corrections.  Achieving 
 this, along with the development and application of an algorithm that ensures reliable source 
 counting without duplication and proper accounting for small gaps and other irregularities in the data, is the main 
-labour defining the task (Farnhill 2015, PhD Thesis).
+labour presented here (described also by Farnhill 2015, PhD Thesis).
 
 The first step in this process is to establish a working definition of a detected 'star' in the survey data.
 
@@ -208,12 +210,12 @@ The first step in this process is to establish a working definition of a detecte
 \label{subsec:galaxy_density}
 
 A fraction of sources detected in DR2 fields are known to be misclassified as 
-non-stellar towards field edges - this is due to progressive distortion in the point spread function (PSF) with increasing 
-distance from the optical axis (OA) of the INT/WFC system. This pattern of behaviour has a small impact on the final DR2 
-catalogues, which provide primary detections that are selected according to a criterion of lowest distance to the optical 
-axis.  But when counting stellar (morphological class -1) sources from a single field to produce a stellar density map 
-the issue of progressive misclassification has to be tackled. Fig. \ref{fig:misclassification} 
-shows an example of a field exhibiting from this problem.
+non-stellar towards field edges - this is due to progressive distortion in the PSF with increasing 
+distance from the optical axis (OA) of the INT/WFC system. This pattern of behaviour has a small 
+impact on the final DR2 catalogues, which provide primary detections that are selected according to 
+a criterion of lowest distance to the optical axis.  But when counting stellar (morphological class -1) 
+sources from a single field to produce a stellar density map the issue of progressive misclassification 
+has to be tackled. Fig. \ref{fig:misclassification} shows an example of a field exhibiting this problem.
 
 \begin{figure}
 \begin{center}
@@ -224,17 +226,19 @@ and non-stellar ($rClass=+1$, red) in the $r^{\prime}$-band for IPHAS field 4975
 \end{center}
 \end{figure}
 
-Assuming a constant ratio of stellar to non-stellar sources applies in reality across any one field,
-comparisons between 5 sq. deg. regions at field centres and edges revealed
-occasional misclassification of  several hundred sources. Of course, some of these objects are not misclassified -- they can
-be genuine examples of galaxies presenting extended morphologies.  To determine the
-expected number of galaxies detected in a similar area, galaxy counts were taken from \citet{Yasuda2001}, down to the 
-5$\sigma$ $r^{\prime}$- and $i^{\prime}$-band limits of IPHAS, and then extinguished by the median \citet{Schlegel1998} 
-extinction values for all fields (corrected by \citet{Schlafly2011} recalibration). Using median limiting magnitudes, 
-$\sim 1$ extragalactic source is expected per 5 sq. deg. region. Against stellar densities typically orders of magnitude 
-larger, this is very small.  It was therefore regarded as safe to include 'non-stellar' +1 classified sources for 
-density mapping purposes - the losses that would be  suffered on leaving them out, in fields similar to that depicted in 
-Fig. \ref{fig:misclassification}, are much larger than  the contamination by galaxies.
+Assuming a constant ratio of stellar to non-stellar sources applies in reality across 
+any one field, comparisons between 5 sq. deg. regions at field centres and edges revealed
+occasional misclassification of several hundred sources. Of course, some of these objects 
+are not misclassified -- they can be genuine examples of galaxies presenting as extended objects.  
+To determine the expected number of galaxies detected in a similar area, galaxy counts were 
+taken from \citet{Yasuda2001}, down to the 5$\sigma$ $r^{\prime}$- and $i^{\prime}$-band limits 
+of IPHAS, and then extinguished by the median \citet{Schlegel1998} extinction values for all fields 
+(corrected using the \citet{Schlafly2011} recalibration). Based on median limiting magnitudes, 
+$\sim 1$ extragalactic source is predicted per 5 sq. deg. region. Against stellar densities typically 
+orders of magnitude larger, this is very small.  It was therefore regarded as safe to include 
+'non-stellar' +1 classified sources for density mapping purposes - the losses that would be 
+suffered on leaving them out, in fields similar to that depicted in Fig. \ref{fig:misclassification}, 
+are much larger than is the likely contribution from galaxies.
 
 % In the case where all point sources are accurately classified, the primary
 % source of extended objects would be galaxies - only a smaller fraction would be
@@ -352,14 +356,18 @@ vignetting that will hinder detection. In the majority of such cases (but not qu
 missing sources will be picked up in the offset partner pointing, or in the overlap with a 
 neighbouring field.
 
-More significant and pervasive losses which affect the final star counts are those
-due either to confusion at high stellar densities or to statistical sensitivity losses at the faint limit
-for detection.  In the Galactic plane at lower longitudes, where the stellar density in IPHAS can reach up
-to 500,000 per square degree, confusion will be especially important and liable to determine the effective 
-magnitude limit.  Both kinds of incompleteness are exacerbated by relatively poor seeing.  We first 
-consider confusion in some detail, before going on to describe our method of incompleteness correction.
+More significant and pervasive losses affecting the final star counts are those
+due either to confusion promoted by high stellar densities or to statistical sensitivity losses at the 
+faint limit for detection.  In the Galactic plane at lower longitudes, where the stellar density in 
+IPHAS can reach up to 500,000 per square degree, confusion will be especially important and liable to 
+determine the effective magnitude limit.  Outside the Solar Circle where the typical stellar density is 
+50,000 per square degree, confusion is no more than marginally significant: the median 1.1 arcsec PSF 
+implies 70 'beams' per source, to be compared with the rule of thumb confusion threshold of 30 per 
+source (see Hogg 2001).   Both kinds of incompleteness are exacerbated by relatively poor seeing.  We 
+first consider confusion and its estimation in some detail, before going on to describe our chosen 
+method of incompleteness correction based on artifical source injection.
 
-\subsection{Confusion}
+\subsection{Confusion, as estimated from the nearest-neighbour distribution}
 
 Confusion, the effect of background noise caused by unresolved sources, scales with source density \citep{Condon1974}. 
 For randomly distributed sources, the probability of finding a given number of neighbours within a certain 
@@ -376,7 +384,7 @@ increases the number of nearest neighbours at small separations, while suppressi
 thereby pulling in the peak separation value, $\theta_{max}$.  Equation~\ref{eq:theoretical_neighbours} holds for a 
 population of sources randomly 
 distributed regardless of brightness. In practice, where the distribution of source brightnesses is described by a 
-power law, the susceptibility of a source to confusion increases with decreasing brightness; a limiting faint magnitude 
+power law, the susceptibility of a source to confusion increases with decreasing brightness: a limiting faint magnitude 
 must be chosen in order to define a meaningful confusion rate.
 
 
@@ -460,7 +468,7 @@ must be chosen in order to define a meaningful confusion rate.
 In order to reproduce the theoretical distribution (Eqn. \ref{eq:theoretical_neighbours}), all sources in 
 the area $\Omega$ would need to be recovered. This will never be the case in dense fields, which will modify the 
 observed distribution in the sense that the smallest separations will be under-reported - appearing to relatively
-boost the proportion of nearest neighbouts at larger values of $\theta$.
+boost the proportion of nearest neighbours at larger values of $\theta$.
 
 \begin{figure*}
 \begin{center}
@@ -478,7 +486,7 @@ region of the survey containing fields spanning a wide range of densities. The
 $n(\theta)$ distributions were generated by selecting subregions of the CCDs
 such that a border of width 30$^{\prime\prime}$ was excluded, and the nearest
 neighbour was identified for each of the sources in the central subregion. This
-approach was necessary to avoid the case where sources close to CCD edges have
+approach avoids the case where sources close to CCD edges have
 their nearest neighbour assigned to a source in the CCD area, when in fact its
 nearest neighbour on the sky is located beyond the detector edge. When identifying 
 the nearest neighbours for each source in the central region, the 
@@ -495,11 +503,15 @@ distributions clearly predict closer nearest neighbours than measured.
 
 While the observed nearest neighbour distribution is affected significantly by
 confusion most significantly at smaller ($\lesssim10^{\prime\prime}$) separations, the 
-observed number of nearest neighbours at larger separations is
-less affected by confusion. The theoretical distribution which best fits the
-tail at large $\theta$ values should describe the field as if confusion were not an issue.
-
-Distributions generated from Eqn. \ref{eq:theoretical_neighbours} were fitted to the observed distributions at $>10^{\prime\prime}$ separation, varying $\rho$ such that the number of sources in a field were allowed to range from half its observed value up to twice the observed value. By calculating $\chi^2$ for each fit at large separations, the best fitting value of $\rho$ was found for each, identifying the correction that should be applied for confusion.
+observed number of nearest neighbours at larger separations will be less affected. 
+Hence, the theoretical distribution best fitting the tail at large $\theta$ values comes 
+close to describing the field as if confusion were not an issue.  We have exploited
+this property as a means to gauge confusion loss at small separations.  We have fitted
+distributions generated from Eqn. \ref{eq:theoretical_neighbours} to the observed 
+distributions at $>10^{\prime\prime}$ separation, varying $\rho$ such that the number of 
+sources in a field ranged from half to twice its observed value. By calculating $\chi^2$ 
+for each fit at large separations, the best fitting value of $\rho$ was found for each, 
+identifying the correction that should be applied for confusion.
 
 \begin{figure}
 \begin{center}
@@ -516,20 +528,43 @@ was placed on the magnitude of sources.}
 
 Fig. \ref{fig:confusion_completeness} shows the effect of confusion on the
 survey as a whole. Best fitting n$(\theta)$ distribution (corresponding to a
-theoretical unconfused source count) was obtained for each IPHAS field, allowing a picture to be built up of the impact of confusion. The statistic chosen to represent the magnitude of the correction is the ratio of $\frac{observed}{predicted}$ sources, where the ``predicted" source count is the count corresponding to the best fit theoretical n$(\theta)$ distribution. In order to understand the variation in confusion at different limiting magnitudes $m_0$, fits were performed on sources down to 18th, 19th and 20th magnitudes in $r^{\prime}$, in addition to fits across all sources.
+theoretical unconfused source count) was obtained for each IPHAS field, allowing a 
+picture to be built up of the impact of confusion. The statistic chosen to 
+represent the magnitude of the correction is the ratio of $\frac{observed}{predicted}$ 
+sources, where the ``predicted" source count is the count corresponding to the 
+best fit theoretical n$(\theta)$ distribution. In order to understand the variation 
+in confusion at different limiting magnitudes $m_0$, fits were performed on sources 
+brighter than respectively 18th, 19th and 20th magnitudes in $r^{\prime}$, in addition 
+to fits across all sources.
 
 In a perfect survey capable of deblending overlapping sources, all fields would
 exhibit zero confusion, with their curves jumping from zero to 100\% of all
 fields at a ratio of 1.0. In reality some sources will always be lost to
-confusion, with the impact increasing the higher the density of objects. Fainter objects suffer more from confusion losses as their PSFs are more likely to be lost in the vicinity of brighter sources, in addition to their intrinsically higher densities (see Fig. \ref{fig:magnitude_turnovers} for examples of the magnitude distributions of IPHAS fields). Fig. \ref{fig:confusion_completeness} demonstrates this behaviour as the incompleteness takes hold for a greater number of fields as the limiting magnitude $m_0$ is increased.
+confusion, with the impact increasing the higher the density of objects. Fainter 
+objects suffer more from confusion losses as their PSFs are more likely to be 
+lost in the vicinity of brighter sources, in addition to their intrinsically higher 
+densities (see Fig. \ref{fig:magnitude_turnovers} for examples of the magnitude distributions 
+of IPHAS fields). Fig. \ref{fig:confusion_completeness} demonstrates this behaviour as the 
+incompleteness takes hold for a greater number of fields as the cut-off magnitude $m_0$ 
+is increased.
 
 For a fraction of fields at all values of $m_0$, the best fit to their nearest
-neighbour distributions correspond to a lower predicted number of sources than
-actually observed sources. This is possible since the allowed minimum value when searching for the best fit is half the observed count. The maximum ratio
-returned is $\sim$1.1, for fields which can be seen to lie in regions of lowest
-density when plotted spatially. These fields would be expected to return a
-corresponding best fit ratio of 1.0, suggesting that the fitting to the
-n$(\theta)$ distribution tails has an associated uncertainty of $\sim$10\%; such an uncertainty renders this approach for correcting source counts unreliable.
+neighbour distributions indicates a lower predicted number of sources than
+is actually observed. WHY DO WE THINK THIS IS: THE UNCERTAINTY REFERRED TO NEXT (AT
+18, 19th MAG?)  The maximum ratio returned is $\sim$1.1, for fields which can be seen 
+to lie in regions of lowest density when plotted spatially. These fields would be expected 
+to return a corresponding best fit ratio of 1.0, suggesting that the fitting to the
+n$(\theta)$ distribution tails has an associated uncertainty of $\sim$10\%; such an 
+uncertainty renders this approach for correcting source counts unreliable.  Indeed
+Fig.~\ref{fig:confusion_completeness} can be regarded as a demonstration that, as a
+general rule, at $r < 18$ the impact of confusion in IPHAS is small while (as might be 
+expected) it is close to ubiquitous at $r > 20$.  Source counts in the $i band$ are 
+higher thanks to the lower extinction -- the same plot for this band shows that 
+confusion becomes a minor consideration at $i < ????$ (A NUMBER, PLEASE, HYWEL)
+
+\subsection{Other approximate measures of completeness}
+\label{subsec:turnovers} 
+
 
 There exists a formalism for correcting for the number of sources lost to 
 confusion, based upon Eqn. \ref{eq:theoretical_neighbours}, given by
@@ -537,7 +572,11 @@ confusion, based upon Eqn. \ref{eq:theoretical_neighbours}, given by
 \rho = - \rho^{\prime}\frac{\log\left(1-4\rho^{\prime}\pi\theta_{FWHM}^2\right)}{4\pi\theta_{FWHM}^2}
 \label{eq:irwin_confusion}
 \end{equation}
-\noindent where $\rho$ is the actual source density, $\rho^{\prime}$ is the observed density, and $\theta_{FWHM}^2$ is the seeing in which the field was observed. The expression was derived in \cite{Irwin1984}, and used to correct the observed n$(\theta)$ distributions in \citet{Gonzalez-Solares2008}. Clearly fields with poorer seeing and higher densities will have their observed densities corrected by a significant fraction; \citep{Gonzalez-Solares2008} reported that the IPHAS Initial Data Release fields suffering from greatest confusion were missing 41\% of their sources.
+\noindent where $\rho$ is the actual source density, $\rho^{\prime}$ is the observed density, and $\theta_{FWHM}^2$ 
+is the seeing in which the field was observed. The expression was derived in \cite{Irwin1984}, and used to correct 
+the observed n$(\theta)$ distributions directly in \citet{Gonzalez-Solares2008}. Clearly fields with poorer seeing and 
+higher densities will be subject to larger corrections; \citep{Gonzalez-Solares2008} reported that the IPHAS 
+Initial Data Release fields suffering from greatest confusion were missing 41\% of their sources.
 
 \begin{figure}
 \begin{center}
@@ -550,15 +589,15 @@ confusion, based upon Eqn. \ref{eq:theoretical_neighbours}, given by
 However Eqn. \ref{eq:irwin_confusion} does not hold for for the entire
 [$\rho^{\prime}$, $\theta_{FWHM}$] space covered by all IPHAS DR2 fields - it
 breaks down in dense fields, where the seeing is worse than the median. Fig.
-\ref{fig:neighbour_breakdown} shows the variation of the correction term for the range of parameters encountered by IPHAS. The white region shows the parameter space in which Eqn. \ref{eq:irwin_confusion} is not applicable, where
+\ref{fig:neighbour_breakdown} shows the variation of the correction term for the range of parameters relevant
+to DR2. The white region shows the parameter space in which Eqn. \ref{eq:irwin_confusion} is not 
+applicable, where
 \begin{equation}
 4\pi\rho\theta^{2} > 1
 \label{eq:neighbour_breakdown}
 \end{equation}
-Although this condition will not be met very often, the fact it is possible means that applying it across the survey is not viable. 
-
-\subsection{Survey-wide completeness}
-\label{subsec:turnovers} 
+Although this condition will not be met so often, the fact that it will means that applying 
+eqn.~\ref{eqn:irwin_confusion } across the survey is not viable. 
 
 An approach used in several previous
 surveys \citep{Ruphy1997, Cambresy2002, Lucas2008} is to estimate the
@@ -576,23 +615,23 @@ only source of incompleteness for which they account, choosing to ignore the
 ``slight variations due to the observing conditions" (an approach unfeasible for
 IPHAS).
 
-\citet{Cambresy2002} estimate their completeness from the turnover of 2MASS
-magnitude distributions, and argue that their density maps would show imprints
+\citet{Cambresy2002} estimated their completeness from the turnover of 2MASS
+magnitude distributions, and reason that their density maps would show imprints
 of individual observations had they overestimated their limiting magnitudes.
 This would certainly be the case for IPHAS - without any limiting magnitudes in
-place, the field-to-field variation of densities is extremely obvious.
-
-In a similar treatment of incompleteness, \citet{Lucas2008} quote the 90\%
-completeness limit of UKIDSS, mentioning that in uncrowded fields the modal
+place, the field-to-field variation of densities is extremely obvious.  In applying a 
+similar treatment of incompleteness, \citet{Lucas2008} quote the 90\% completeness 
+limit of the UKIDSS Galactic Plane Survey, noing that in uncrowded fields the modal
 depths vary by 0.25 mag due to observing conditions. This method still depends
-heavily on the turnover in the magnitude distribution, assuming that sensitivity is the only cause of turnover, and relies on ``visually extrapolating" the histogram.
+heavily on the turnover in the magnitude distribution, assuming that sensitivity is 
+the only cause of turnover, and relies on ``visually extrapolating" the histogram.
 
 A single completeness statistic as provided by \citet{Lucas2008} could be used
 to apply a uniform completeness correction, although this assumes that all
 fields in a survey suffer from the same degree of incompleteness. Even if this
 were indeed the case, only the count of sources brighter than the given
 completeness limit could be corrected; it is not possible with this information
-to correct the count for any other magnitude range.
+to correct the count going deeper.
 
 \begin{figure*}
 \begin{center}
@@ -606,17 +645,29 @@ as redder sources are picked up in the $i^{\prime}$-band only.}
 \end{center}
 \end{figure*}
 
-Fig. \ref{fig:magnitude_turnovers} shows the magnitude distributions for three IPHAS fields. A visual inspection would suggest that incompleteness sets in at $\sim$20th mag as a crude estimate across the three bands. Attempts to automate the determination of turnover magnitude for all fields are hampered by the facts that the mode of these distributions are dependent on the chosen binning, and that the magnitude distributions of many fields plateau before dropping off.
+Fig. \ref{fig:magnitude_turnovers} shows the magnitude distributions for three IPHAS fields. 
+A visual inspection would suggest that incompleteness sets in at $\sim$20th mag or fainter in
+$r$ and at $\sim$19th in $i$ and $H\alpha$. Attempts to automate the determination of turnover 
+magnitude for all fields are hampered by the facts that the mode of these distributions are 
+dependent on the chosen binning, and that the magnitude distributions of many fields plateau 
+before dropping off.  But it is already clear from the previous section and Fig.~\ref{fig: }
+that the full picture is more complicated, with confusion not ruled out at magnitudes of 18
+to 19 and that there is good reason to address correction rigorously on a field by field 
+basis. 
 
-\subsection{Artifical sources}  
+
+\subsection{Artifical source injection}  
 A thorough treatment of incompleteness in any survey requires measuring its
-sensitivity to sources over the entire magnitude range of interest - this can be achieved by simulating observations and then processing these simulated frames in the same way as the original data. This method was used (in addition to the magnitude distribution method discussed in $\S$\ref{subsec:turnovers}) by \citet{Harvey2006} as part of a study of interstellar clouds observed by
-Spitzer.
+sensitivity to sources over the entire magnitude range of interest - this is best achieved 
+by simulating observations and then processing these simulated frames in the same way as 
+the original data. This method was used (in addition to the magnitude distribution method 
+discussed in $\S$\ref{subsec:turnovers}) and described by \citet{Harvey2006} as part of a study 
+of interstellar clouds observed by Spitzer.
 
 Such an approach is much more powerful, as statistics can be returned on
 magnitude bins, rather than on the entire magnitude distribution down to a
 specified faint limit. This requires the simulation of sources of all
-magnitudes, resembling real data as closely as possible, without being too
+magnitudes, resembling the real data as closely as possible, without being too
 costly to generate in either computing power or time.
 
 For the purposes of correcting the density map, the completeness of each field
@@ -629,7 +680,12 @@ selected as the chip to represent each field (see $\S$\ref{subsec:completeness_c
 
 This approach to completeness calculation was divided into steps. First the
 typical properties of an image were determined, and used to generate synthetic
-sources that closely resemble genuine stellar sources (Section \ref{subsec:artificial_sources}). The parameters of these synthetic sources were recorded and then catalogues generated from the new frames containing synthetic objects. The tables of synthetic source parameters were cross-matched against the newly generated catalogues, and the rate of recovery measured (Section \ref{subsec:recovery}). The fraction recovered at different magnitudes will allow a completeness curve to be built up for each field, and uniformly computed
+sources that closely resemble genuine stellar sources (Section \ref{subsec:artificial_sources}). 
+The parameters of these synthetic sources were recorded and then catalogues generated 
+from the new frames containing synthetic objects. The tables of synthetic source parameters 
+were cross-matched against the newly generated catalogues, and the rate of recovery 
+measured (Section \ref{subsec:recovery}). The fraction recovered at different magnitudes will 
+allow a completeness curve to be built up for each field, and uniformly computed
 corrections to be applied across the entire survey.
 
 \subsection{Simulating stellar sources}
@@ -637,7 +693,9 @@ corrections to be applied across the entire survey.
 The complexity of simulating stellar sources depends on the accuracy with which
 the real sources are to be recreated. A first order approximation might be a
 circular PSF characterized by a two-dimensional Gaussian, requiring only three
-parameters - FWHM, peak height and centroid coordinates. A cursory glance at the reduced IPHAS frames reveals that a perfectly circular PSF will not reproduce realistic stellar sources - a more complex approximation is needed (see Fig. \ref{fig:fitting_profiles}).
+parameters - FWHM, peak height and centroid coordinates. A cursory glance at the reduced IPHAS frames reveals that a 
+perfectly circular PSF will not reproduce realistic stellar sources - a more complex approximation is needed 
+(see Fig. \ref{fig:fitting_profiles}).
 
 \begin{figure}
 \begin{center}
