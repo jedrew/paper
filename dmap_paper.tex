@@ -183,7 +183,7 @@ these first results and a summary.
 The most recent release, DR2, of the INT/WFC Photometric H$\alpha$ Survey of the Northern Galactic Plane (IPHAS) was 
 presented by Barentsen et al (2014), while the basic specification of IPHAS was set down by Drew et al (2005).  This 
 survey, conducted using the Wide Field Camera (WFC) mounted on the Isaac Newton Telescope (INT) in La Palma, provides 
-photometry of the complete Northern Galactic Plane within the latitude range $-5^{\circ} < b < +5^{circ}$, in narrow-band 
+photometry of the complete Northern Galactic Plane within the latitude range $-5^{\circ} < b < +5^{\circ}$, in narrow-band 
 H$\alpha$ and broadband Sloan $r$ and $i$.  It is the broadbands that are the focus of this paper.  The typical 
 $5\sigma$ magnitude limit reached in the survey is 21.2 in $r$ and 20.0 in $i$, achieved at a median seeing of 1.1 arcsec.  
 The typical external photometric precision of DR2 is close to 0.03 magnitudes, as judged by comparisons with SDSS DR9 
@@ -195,9 +195,8 @@ observations were obtained via standard allocations of time, with the result tha
 are contained within the survey database.  Thanks to the opportunity to obtain repeats of fields exposed in poor conditions, 
 it was possible to apply quality cuts in the preparation of IPHAS DR2 so as to omit clearly inferior data, whilst still 
 achieving over 92\% coverage of the survey footprint.  Even so, there is still a broad quality range within DR2 in terms 
-of both measured widths of the point spread function (PSF), and limiting magnitude (for full details, see Barentsen et al 
-2014).  This variation, along with over a factor of ten decline in the typical observed stellar density along the Northern 
-Plane from $\ell ~ 30^{\circ}$ out to the Anticentre (see figure 3 in Gonzalez-Solares et al 2008), makes it important to 
+of both measured widths of the point spread function (PSF), and limiting magnitude (for full details, see \citet{Barentsen2014}).  This variation, along with over a factor of ten decline in the typical observed stellar density along the Northern 
+Plane from $\ell \sim 30^{\circ}$ out to the Anticentre (see figure 3 in \citet{Gonzalez-Solares2008}), makes it important to 
 restore uniformity to the measured star counts through careful position-dependent completeness corrections.  Achieving 
 this, along with the development and application of an algorithm that ensures reliable source 
 counting without duplication and proper accounting for small gaps and other irregularities in the data, is the main 
@@ -558,7 +557,7 @@ n$(\theta)$ distribution tails has an associated uncertainty of $\sim$10\%; such
 uncertainty renders this approach for correcting source counts unreliable.  Indeed
 Fig.~\ref{fig:confusion_completeness} can be regarded as a demonstration that, as a
 general rule, at $r < 18$ the impact of confusion in IPHAS is small while (as might be 
-expected) it is close to ubiquitous at $r > 20$.  Source counts in the $i band$ are 
+expected) it is close to ubiquitous at $r > 20$.  Source counts in the $i$ band are 
 higher thanks to the lower extinction -- the same plot for this band shows that 
 confusion becomes a minor consideration at $i < ????$ (A NUMBER, PLEASE, HYWEL)
 
@@ -1147,10 +1146,34 @@ As illustrated by Fig. \ref{fig:spiral_arms} sightlines in the IPHAS footprint b
 The default extinction model when using the Besan\c{c}on web interface is an exponential disc of obscuring material, with a local extinction normalisation of 0.7 mag kpc$^{-1}$ - it is noted that this value should be treated with caution in the Galactic Plane. In order to reproduce a similar extinction model, a disc of obscuring material was imposed on the Besan\c{c}on catalogue. The local A$_0$ (monochromatic extinction at 5495$\mathrm{\AA}$) normalisation was determined by imposing discs with normalisations ranging from 0 to 3 mag kpc$^{-1}$ in steps of 0.05 mag kpc$^{-1}$, to the Besan\c{c}on catalogue along each sightline. The magnitude distribution of bright ($12<r^{\prime}<15.5$) stars in the resulting extinguished synthetic catalogue was compared to the corresponding IPHAS DR2 distribution in the same area. The local normalisation that resulted in the best agreement between the two magnitude distributions was adopted for the sightline.
 
 \subsection{Comparing IPHAS and Besan\c{c}on densities}
-\textit{Plots comparing the two, for $\approx$5 sightlines?}
+%\textit{Plots comparing the two, for $\approx$5 sightlines?}
+\begin{figure*}
+\begin{center}
+\begin{flushleft}
+\Large{$\ell$=30$^{\circ}$:}
+\end{flushleft}
 
-\subsection{A closer look at Besan\c{c}on predictions}
-\textit{Split Besancon contributions up into spectral type, see where the majority of sources are coming from for each sightline?}
+\includegraphics[width=0.9\textwidth]{figures/count_comparison_30.pdf} 
+
+\begin{flushleft}
+\Large{$\ell$=90$^{\circ}$:}
+\end{flushleft}
+
+\includegraphics[width=0.9\textwidth]{figures/count_comparison_89.pdf}
+
+\begin{flushleft}
+\Large{$\ell$=175$^{\circ}$:}
+\end{flushleft}
+
+\includegraphics[width=0.9\textwidth]{figures/count_comparison_174.pdf} 
+\caption{\footnotesize Comparisons between incompleteness-corrected IPHAS star counts (black) and Besan\c{c}on predictions, reddened by the extinction curves of \citet{Marshall2004} (blue) and \citet{Sale2014} (yellow). From top to bottom, comparisons are for sight lines at $\ell$=30$^{\circ}$, 90$^{\circ}$ and 175$^{\circ}$.}
+\label{fig:count_comparison}
+\end{center}
+\end{figure*}
+
+
+%\subsection{A closer look at Besan\c{c}on predictions}
+%\textit{Split Besancon contributions up into spectral type, see where the majority of sources are coming from for each sightline?}
 
 % \begin{figure*}
 %  \vspace{302pt}
