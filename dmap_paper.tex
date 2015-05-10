@@ -131,13 +131,13 @@ section 4.  This includes the specifications of the maps and pointers on how to 
 them.  In $i$ band our map reaches down to 18th mag (Vega system), a limit that roughly
 corresponds to Gaia G $\sim$ 19 (see Appendix B).   In section 5, the maps are subjected 
 to first comparisons with Galactic model predictions.  This is attempted using distinct 
-prescriptions of the 3-d distribution of interstellar extinction in order to gain an 
-impression of how influential the choice of 3D extinction map can be.  Interestingly, the 
-results from this limited exploration are already mixed. It is found that outside the 
+prescriptions of the 3-D distribution of interstellar extinction in order to gain a 
+first impression of how influential the choice of 3D extinction map can be.  Interestingly, the 
+results from this limited exploration are already mixed: we find that outside the 
 Solar Circle ($\ell > 90^{\circ}$  in the north), the agreement between star counts and 
 model prediction is quite good -- but at the lowest Galactic longitudes examined, 
 significant discrepancies appear.  The paper ends in section 6 with a brief discussion of 
-these first results and a summary.
+these results and a summary.
 
 
 
@@ -195,12 +195,13 @@ observations were obtained via standard allocations of time, with the result tha
 are contained within the survey database.  Thanks to the opportunity to obtain repeats of fields exposed in poor conditions, 
 it was possible to apply quality cuts in the preparation of IPHAS DR2 so as to omit clearly inferior data, whilst still 
 achieving over 92\% coverage of the survey footprint.  Even so, there is still a broad quality range within DR2 in terms 
-of both measured widths of the point spread function (PSF), and limiting magnitude (for full details, see \citet{Barentsen2014}).  This variation, along with over a factor of ten decline in the typical observed stellar density along the Northern 
-Plane from $\ell \sim 30^{\circ}$ out to the Anticentre (see figure 3 in \citet{Gonzalez-Solares2008}), makes it important to 
-restore uniformity to the measured star counts through careful position-dependent completeness corrections.  Achieving 
-this, along with the development and application of an algorithm that ensures reliable source 
-counting without duplication and proper accounting for small gaps and other irregularities in the data, is the main 
-labour presented here (described also by Farnhill 2015, PhD Thesis).
+of both measured widths of the point spread function (PSF), and limiting magnitude (for full details, 
+see \citet{Barentsen2014}).  This variation, along with over a factor of ten constrast in the typical observed stellar density along the Northern 
+across the northern Plane (see figure 3 in \citet{Gonzalez-Solares2008}), makes it important to 
+achieve uniformity of outcome and well-defined errors through careful position-dependent completeness corrections. 
+This task, along with the development and application of an algorithm that ensures reliable source 
+counting without duplication and proper accounting for small gaps and other irregularities in the data, is the work 
+presented here (see also Farnhill 2015, PhD Thesis).
 
 The first step in this process is to establish a working definition of a detected 'star' in the survey data.
 
@@ -549,14 +550,16 @@ is increased.
 
 For a fraction of fields at all values of $m_0$, the best fit to their nearest
 neighbour distributions indicates a lower predicted number of sources than
-is actually observed. WHY DO WE THINK THIS IS: THE UNCERTAINTY REFERRED TO NEXT (AT
-18, 19th MAG?)  The maximum ratio returned is $\sim$1.1, for fields which can be seen 
-to lie in regions of lowest density when plotted spatially. These fields would be expected 
-to return a corresponding best fit ratio of 1.0, suggesting that the fitting to the
-n$(\theta)$ distribution tails has an associated uncertainty of $\sim$10\%; such an 
-uncertainty renders this approach for correcting source counts unreliable.  Indeed
-Fig.~\ref{fig:confusion_completeness} can be regarded as a demonstration that, as a
-general rule, at $r < 18$ the impact of confusion in IPHAS is small while (as might be 
+is actually observed. Indeed the median completeness at brighter $m_0$ shows signs of
+converging to 0.98--0.99. However, we notice that the maximum ratio returned is $\sim$1.1, 
+for fields which lie in regions of lowest density in the map of the Plane. These fields 
+would be expected to return a corresponding best fit ratio of 1.0, suggesting that the 
+fitting to the n$(\theta)$ distribution tails has an associated uncertainty of $\sim$10\%; 
+so large an uncertainty indicates that this method for correcting source counts is not 
+sufficiently exact to adopt it for application across the survey.  
+
+Nevertheless, Fig.~\ref{fig:confusion_completeness} can be regarded as a demonstration that, 
+as a general rule, at $r < 18$ the impact of confusion in IPHAS is small while (as might be 
 expected) it is close to ubiquitous at $r > 20$.  Source counts in the $i$ band are 
 higher thanks to the lower extinction -- the same plot for this band shows that 
 confusion becomes a minor consideration at $i < ????$ (A NUMBER, PLEASE, HYWEL)
@@ -572,7 +575,7 @@ confusion, based upon Eqn. \ref{eq:theoretical_neighbours}, given by
 \label{eq:irwin_confusion}
 \end{equation}
 \noindent where $\rho$ is the actual source density, $\rho^{\prime}$ is the observed density, and $\theta_{FWHM}^2$ 
-is the seeing in which the field was observed. The expression was derived in \cite{Irwin1984}, and used to correct 
+is the seeing in which the field was observed. The expression was derived in \cite{Irwin1984}, and it was used to correct 
 the observed n$(\theta)$ distributions directly in \citet{Gonzalez-Solares2008}. Clearly fields with poorer seeing and 
 higher densities will be subject to larger corrections; \citep{Gonzalez-Solares2008} reported that the IPHAS 
 Initial Data Release fields suffering from greatest confusion were missing 41\% of their sources.
@@ -595,7 +598,7 @@ applicable, where
 4\pi\rho\theta^{2} > 1
 \label{eq:neighbour_breakdown}
 \end{equation}
-Although this condition will not be met so often, the fact that it will means that applying 
+Although this condition is not met so often, the fact that it is some of the time means that its deployment 
 eqn.~\ref{eqn:irwin_confusion } across the survey is not viable. 
 
 An approach used in several previous
@@ -617,17 +620,17 @@ IPHAS).
 \citet{Cambresy2002} estimated their completeness from the turnover of 2MASS
 magnitude distributions, and reason that their density maps would show imprints
 of individual observations had they overestimated their limiting magnitudes.
-This would certainly be the case for IPHAS - without any limiting magnitudes in
+This would certainly be the case for IPHAS - without any magnitude cut in
 place, the field-to-field variation of densities is extremely obvious.  In applying a 
 similar treatment of incompleteness, \citet{Lucas2008} quote the 90\% completeness 
 limit of the UKIDSS Galactic Plane Survey, noing that in uncrowded fields the modal
 depths vary by 0.25 mag due to observing conditions. This method still depends
-heavily on the turnover in the magnitude distribution, assuming that sensitivity is 
-the only cause of turnover, and relies on ``visually extrapolating" the histogram.
+heavily on the turnover in the magnitude distribution, and relies on 
+``visually extrapolating" the histogram.
 
 A single completeness statistic as provided by \citet{Lucas2008} could be used
 to apply a uniform completeness correction, although this assumes that all
-fields in a survey suffer from the same degree of incompleteness. Even if this
+fields in a survey suffer from the same pattern of incompleteness. Even if this
 were indeed the case, only the count of sources brighter than the given
 completeness limit could be corrected; it is not possible with this information
 to correct the count going deeper.
@@ -649,19 +652,19 @@ A visual inspection would suggest that incompleteness sets in at $\sim$20th mag 
 $r$ and at $\sim$19th in $i$ and $H\alpha$. Attempts to automate the determination of turnover 
 magnitude for all fields are hampered by the facts that the mode of these distributions are 
 dependent on the chosen binning, and that the magnitude distributions of many fields plateau 
-before dropping off.  But it is already clear from the previous section and Fig.~\ref{fig: }
-that the full picture is more complicated, with confusion not ruled out at magnitudes of 18
-to 19 and that there is good reason to address correction rigorously on a field by field 
-basis. 
+before dropping off.  But it is already clear from the previous section and 
+Fig.~\ref{fig:confusion_completeness} that the full picture is more complicated, with some small 
+residual source loss still affecting magnitudes as bright as 18 to 19. In short, there is good reason 
+to address correction rigorously on a field by field basis. 
 
 
 \subsection{Artifical source injection}  
 A thorough treatment of incompleteness in any survey requires measuring its
 sensitivity to sources over the entire magnitude range of interest - this is best achieved 
 by simulating observations and then processing these simulated frames in the same way as 
-the original data. This method was used (in addition to the magnitude distribution method 
-discussed in $\S$\ref{subsec:turnovers}) and described by \citet{Harvey2006} as part of a study 
-of interstellar clouds observed by Spitzer.
+the original data. This method (in addition to the magnitude distribution method 
+discussed in $\S$\ref{subsec:turnovers}) was used and described by \citet{Harvey2006} as part 
+of a study of interstellar clouds observed by Spitzer.
 
 Such an approach is much more powerful, as statistics can be returned on
 magnitude bins, rather than on the entire magnitude distribution down to a
@@ -673,19 +676,20 @@ For the purposes of correcting the density map, the completeness of each field
 was assessed using the images and catalogues of CCD 4 only. Using only one of
 the WFC CCDs per field cuts the processing time by a factor of four, bringing
 the total time necessary to compute the completeness of the entire survey down
-to a little over one week. Due to the fact that DR2 preferentially selects
-sources from the centre of fields (closer to the optical axis), CCD 4 was
-selected as the chip to represent each field (see $\S$\ref{subsec:completeness_ccd4} for further discussion).
+to a little over one week (using a high-performance multi-node cluster). Due to the 
+fact that DR2 preferentially selects sources from the centre of fields (closer to the 
+optical axis), CCD 4 -- the most central of the mosaic -- was selected as the chip 
+to represent each field (see $\S$\ref{subsec:completeness_ccd4} for further discussion).
 
-This approach to completeness calculation was divided into steps. First the
+The main steps of the completeness calculation were as follows. First the
 typical properties of an image were determined, and used to generate synthetic
 sources that closely resemble genuine stellar sources (Section \ref{subsec:artificial_sources}). 
-The parameters of these synthetic sources were recorded and then catalogues generated 
-from the new frames containing synthetic objects. The tables of synthetic source parameters 
-were cross-matched against the newly generated catalogues, and the rate of recovery 
-measured (Section \ref{subsec:recovery}). The fraction recovered at different magnitudes will 
-allow a completeness curve to be built up for each field, and uniformly computed
-corrections to be applied across the entire survey.
+The parameters of these synthetic sources were recorded and then catalogues were generated, via 
+the pipeline software, from the new frames with the added synthetic objects. The tables of 
+synthetic source parameters were cross-matched against the newly generated catalogues, and the 
+rate of recovery was measured (Section \ref{subsec:recovery}). The fraction recovered at 
+different magnitudes will allow a completeness curve to be built up for each field, and 
+uniformly computed corrections can then be applied across the entire survey.
 
 \subsection{Simulating stellar sources}
 \label{subsec:artificial_sources}
@@ -693,7 +697,7 @@ The complexity of simulating stellar sources depends on the accuracy with which
 the real sources are to be recreated. A first order approximation might be a
 circular PSF characterized by a two-dimensional Gaussian, requiring only three
 parameters - FWHM, peak height and centroid coordinates. A cursory glance at the reduced IPHAS frames reveals that a 
-perfectly circular PSF will not reproduce realistic stellar sources - a more complex approximation is needed 
+perfectly circular PSF will not yield realistic stellar sources - a more complex approximation is needed 
 (see Fig. \ref{fig:fitting_profiles}).
 
 \begin{figure}
@@ -707,7 +711,8 @@ a 2D elliptical Gaussian.}
 \end{center}
 \end{figure}
 
-The parameters returned by the aperture photometry performed on the DR2 images suggest what might need to be included to accurately recreate a stellar source:
+The parameters returned by the aperture photometry performed on the DR2 images indicate the following 
+should be included to accurately recreate a stellar source:
 \begin{itemize}\itemsep
 \item Flux
 \item FWHM
@@ -718,13 +723,159 @@ The parameters returned by the aperture photometry performed on the DR2 images s
 \end{itemize}
 \noindent The choice of each is described below.
 
-Ideally measuring the completeness using artificial sources would be done by adding a single source at a time, verifying whether or not it is detected. This process would be repeated as many times as required to obtain decent statistics, for the entire magnitude range of interest. This would be the route taken in the absence of any limitations on either time or computing resources.
+\subsubsection{Flux}
+\label{subsubsec:flux}
+The relation between total flux and magnitude was determined per field by fitting a power law to the photometry returned 
+by \textsc{imcore}.
 
-The limiting factor in the completeness investigation is the time taken by the \textsc{imcore} routine, which takes $\sim$20 seconds to read in an IPHAS image, run its background estimation routines and generate a catalogue. Adding a single source at a time would require $\sim$20 s, multiplied by both the number of magnitude bins that are being considered, and the number of sources needed in each bin for sufficient statistics. This would push the time required to generate the number of sources detailed in Table \ref{table:number_artificial} to $\sim$ 65 hours for a single field.
+\textit{Mention that flux height is initially used? It doesn't have to be, and if code is rewritten for publication this 
+step could be removed.  JED - if of no material significance, can be left out.  I assume we are later..}
 
-To reduce the cost, multiple sources needed to be inserted into each image simultaneously. It was necessary to ensure that not too many sources were inserted at any one time; inserting too high a number would modify the intrinsic properties of the image - for example, probing the completeness of an originally sparse image with a high number of artificial sources inserted would not return statistics useful for understanding the original image. The value of $\frac{\delta n}{n_{image}}$ needed to be kept sufficiently low, where $\delta n$ is the number of artificial sources added to the image, and $n_{image}$ is the number of sources present in the original image. The quality control information available for DR2 fields report that the most sparsely populated fields contain more than 1000 stars. This is not an extremely constraining limit; a maximum of up to 50 stars was chosen as a value that would keep $\frac{\delta n}{n_{image}}$ below 0.05 for all fields.
+In order to insert a source of a given magnitude $m_0$, it is necessary to understand what flux in counts per unit time
+that source should have. The magnitude of an object is determined by
+\begin{equation}
+m = ZP - 2.5 \times \log_{10} {\dfrac{c}{t}} - APCOR - PERCORR
+\label{eq:aperture_photometry}
+\end{equation}
+\noindent where $ZP$ is the photometric zeropoint of the image as determined via the DR2 uniform calibration \citep{ }, $c$ 
+is the measured counts within the defined aperture, $t$ is exposure time in seconds, while $APCOR$ and $PERCORR$ are small 
+correction terms. $APCOR$ is an aperture correction term calculated by the pipeline software, \textsc{imcore}, which uses 
+the curve-of-growth of stellar sources to determine the correction required to transform the chosen aperture measurement to 
+total flux (suitable reference). $PERCORR$ is a sky calibration correction, obtained by comparing dark sky regions with the 
+median across each CCD. $ZP$, $APCOR$ and $PERCORR$ are all taken from the pre-existing catalogue headers.
 
-Allowing up to 50 sources per artificial source injection increases efficiency by reducing the number of \textsc{imcore} runs needed. The low value of $\frac{\delta n}{n_{image}}$ renders unworkable an approach of inserting sources based on the pre-existing magnitude distribution of the sources in the image - the number of runs required to inject artificial sources in this fashion would be significantly higher then the approach actually adopted; the requirement that $\frac{\delta n}{n_{image}} < 0.05$ would mean a very small number of bright ($\sim12$ mag) sources being injected in each run, requiring a large number of runs to obtain usable statistics at brighter magnitudes. The approach adopted was to split the magnitude range of interest into magnitude bins $0.25$ mag wide, inserting sources from only one bin at a time.
+\subsubsection{Full-width at half-maximum}
+\label{subsubsec:parameter_fwhm}
+
+Initially the parameters of genuine sources in IPHAS frames were determined by
+fitting elliptical two-dimensional Gaussian profiles to each source detected by
+\textsc{imcore}, building up lists of best fit parameters for the purpose of
+generating realistic artificial sources.  Parameters of sources were excluded from 
+these lists if they exhibited one of the following behaviours: 
+\begin{itemize}\itemsep \item The source position returned is
+further than 5 pixels from the position reported by \textsc{imcore} \\- these
+fits are likely to have been disturbed by nearby sources \item The
+peak value of the best-fit Gaussian is $>55000$ counts \\- this is the regime
+for the WFC where bright sources saturate, distorting the PSF. \item The
+position angle is measured to be exactly zero \\- in these cases the fit is
+assumed to have failed {\bf or the measured PSF is indistinguishable from 
+circular (JED comment)??}\end{itemize}
+
+The best fit full-width half maximum (FWHM) values returned for the semi-major and 
+semi-minor axes of the sources were gathered for each of the fields entering this 
+exploration, and Gaussians were then fit to the distribution to recover $\sigma$. 
+{\bf Hywel - why fit to Gaussians - can just read off median values, compute means 
+etc from the raw distribution data?  Or do I horribly mis-read what you are trying 
+to say.  Are we talking of 2 separate distributions per field for semi-major and 
+semi-minor axis FWHM?}. 
+%Fig.
+%\ref{fig:parameter_fwhm} shows the distributions for four IPHAS fields, in
+%addition to the central positions of the best fit Gaussians.
+
+%\begin{figure} 
+%\begin{center}
+%\includegraphics[width=1.0\linewidth]{figures/parameter_fwhm.pdf}
+%\caption{\footnotesize Distribution of best fitting FWHM values in arcseconds for sources from four randomly selected IPHAS DR2 fields. Values were obtained by fitting elliptical Gaussians to every stellar source in CCD4 of the IPHAS
+%field. FWHM values reported here are for the Gaussian profile along the semi-
+%major axes of the sources. \textbf{Red lines} denote the median FWHM as
+%determined by \textsc{imcore} for CCD4. \textbf{Green shaded areas} highlight the regions centred on the best fit FWHM for the distributions, and encompass the area $\pm\sigma$.} 
+%\label{fig:parameter_fwhm} 
+%\end{center} 
+%\end{figure}
+
+However, it quickly became apparent that the median(???) FWHM values obtained in this way
+were in good agreement with those determined by \textsc{imcore}.  Hence it was decided 
+that it was not necessary to recompute this, and that taking the pipeline-specified value as 
+representative of each entire field was sufficient for our purposes. 
+%Fig. \ref{fig:parameter_fwhm} shows how the median FWHM values fall within 1$\sigma$ of the best fit Gaussian distributions for four randomly
+%selected IPHAS DR2 fields.
+
+\subsubsection{Ellipticity}
+\label{subsubsec:ellipticity}
+\begin{figure} 
+\begin{center}
+\includegraphics[width=1.0\linewidth]{figures/parameter_ell.pdf}
+\caption{\footnotesize Distribution of ellipticities for all stellar sources in
+four randomly selected IPHAS fields. Ellipticities were computed from the
+profiles of the elliptical Gaussians best fitting each object along their semi-
+major and -minor axes. \textbf{Red lines} denote the median ellipticities for
+CCD4 of each field as determined by \textsc{imcore.}} 
+\label{fig:parameter_ell}
+\end{center} 
+\end{figure}
+
+The treatment of ellipticity followed that of FWHM values; although a reliable measure of field-wide ellipticity was 
+determined from the median of the best-fit FWHM values across the field and the relation
+\begin{equation}
+e=1-\frac{\mathrm{FWHM}_{min}}{\mathrm{FWHM}_{maj}}
+\label{eq:ellipticity}
+\end{equation}
+\noindent (where FWHM$_{min}$ and FWHM$_{maj}$ are the full-width half-maxima along sources' semi-minor and semi-major 
+axes respectively).
+
+Fig. \ref{fig:parameter_ell} shows the distributions of ellipticities as
+determined by Equation \ref{eq:ellipticity} and the FWHM values determined in
+Section \ref{subsubsec:parameter_fwhm}. The median ellipticity value as
+determined by \textsc{imcore} is denoted by a red line. It can be seen that the
+median values for three of the four test fields are slightly optimistic (i.e.
+underestimate the ellipticities measured from 2D Gaussian fits). Owing to the
+fact fields displaying ellipticities greater than 0.3 were excluded from release 
+in DR2, the slight mismatch between the median of the fitted ellipticities and the 
+comparatively optimistic median calculated by \textsc{imcore} will never be so large 
+that it will significantly affect the recovery of sources.
+
+\textit{Seems a bit weak. But returned magnitude shouldn't really be affected by 
+ellipticity - we're not PSF fitting each source. Position might be affected, but only by 
+a very small amount.  JED - it is actually all rather confusing just now... see
+email: the clear up will need to start in the previous sub-section.}
+
+\subsubsection{Position angle}
+\label{subsubsec:position_angle}
+%Conclusion in thesis is that most fields' PA distributiuons are too flat (or
+%at least not nicely Gaussian) to confidently obtain a PA, so it's dropped. Is
+%such a subsection even worth including here?
+The typical distribution of position angle (PA) within a field is quite broad and non-Gaussian in
+appearance.  In practice, there is no reason to expect the choice of PA to significantly influence 
+the ability to recover an artificial source -- hence it is set at {\bf Hywel - just state what you 
+did -- is it always set equal to zero, or what?}
+
+\subsubsection{Position}
+\label{subsubsec:position}
+Object $x$ and $y$ pixel positions were drawn randomly from uniform
+distributions across the 2048$\times$4096 pixels of the WFC CCDs.
+
+The completeness calculated for the unvignetted CCD 4 of each field was taken to represent 
+the completeness over all four CCDs.  This allowed the border zone -- which can complicate the 
+appraisal of completeness -- to be easily defined: a rectilinear zone 10 arcsec (or 30 pixels) wide
+inside the CCD edges was imposed such that no artificial source could be placed within it.  
+\textsl{Include plot of used region of all 4 CCDs here or in map generation section ...JED - 
+in the map generation section}.  This made sure that no injected artificial source would lose
+flux across the CCD edge.
+
+
+\subsection{Practical implementation of artificial source injection}
+
+Ideally measuring the completeness using artificial sources would be done by adding a single source 
+at a time, verifying whether or not it is detected. This process would be repeated as many times as required 
+to obtain decent statistics, for the entire magnitude range of interest. This would be the route taken in the 
+absence of any limitations on either time or computing resources.   The limiting factor in this 
+is the computing time taken for the basic step of catalogue generation (20 sec in this case).  To generate the 
+number of sources detailed in Table \ref{table:number_artificial} $\sim$ 65 hours would be required to process 
+just one field.
+
+To reduce the cost, multiple sources needed to be inserted into each image simultaneously. It was necessary to 
+ensure that not too many sources were inserted at any one time; inserting too high a number would modify the intrinsic 
+properties of the image - for example, probing the completeness of an originally sparse image with a high number of 
+artificial sources inserted would not return statistics useful for understanding the original image. The value of 
+$\frac{\delta n}{n_{image}}$ needed to be kept sufficiently low, where $\delta n$ is the number of artificial sources 
+added to the image, and $n_{image}$ is the number of sources present originally. The quality control 
+information available for DR2 fields report that the most sparsely populated fields contain more than 1000 stars. This 
+is not an extremely constraining limit; a maximum of up to 50 stars was chosen as a value that would keep 
+$\frac{\delta n}{n_{image}}$ below 0.05 for all fields.   Allowing up to 50 sources per artificial source injection 
+increases processing efficiency, but the low value of $\frac{\delta n}{n_{image}}$ is too little to sample the 
+pre-existing magnitude distribution of the sources in each image faithfully.  Hence, the approach adopted was to 
+split the magnitude range of interest into bins $0.25$ mag wide, inserting sources from only one bin at a time in each 
+catalogue regeneration.
 
 \begin{table}
 \begin{center}
@@ -760,133 +911,40 @@ Start & End & $N$ & $M$ & $No.\ sources$ \\ \hline
 \end{center}
 \end{table}
 
-Table \ref{table:number_artificial} details the number of sources inserted per image, and the number of artificial images that were generated for each magnitude bin. The total numbers per magnitude bin were increased as sources become progressively fainter. This was achieved by increasing the number of artificial sources injected per run until the limit of 50 sources was reached. At this point the number of runs was increased to raise the total number of sources injected in the faintest bins, minimizing the noise at the faint end of the completeness curve, where the most significant corrections will be necessary. 
-
-The setup detailed in Table \ref{table:number_artificial} requires around 2.2 hours ($\sim$20 s $\times$ 410 \textsc{imcore} runs). For the 14,115 fields that make up DR2, this results in a total computing time of $\sim$31000 hours. Using the computer cluster  available within the Science \& Technology Research Institute at the University of Hertfordshire, a large number of CPUs are available to run such jobs. Utilizing 128 CPUs simultaneously brings the total time to estimate completeness for the entire survey in a single band to $\sim$10 days.
-
-\subsubsection{Flux}
-\label{subsubsec:flux}
-The relation between total flux and magnitude was determined per field by fitting a power law to the photometry returned by \textsc{imcore}.
-
-\textit{Mention that flux height is initially used? It doesn't have to be, and if code is rewritten for publication this step could be removed.}
-
-As discussed in Section \ref{subsec:artificial_sources}, pre-defined numbers of sources are inserted in each magnitude bin. In order to insert a source of a given magnitude $m$, it is necessary to understand what flux that source would have to recover a measurement of $m$. The magnitude of an object is determined by
-\begin{equation}
-m = ZP - 2.5 \times \log_{10} {\dfrac{c}{t}} - APCOR - PERCORR
-\label{eq:aperture_photometry}
-\end{equation}
-\noindent where $ZP$ is the photometric zeropoint of the image, $c$ is the measured counts within the defined aperture, $t$ is exposure time in seconds, $APCOR$ and $PERCORR$ are small correction terms. 
-
-The $ZP$ of a given field is calculated based on an average of photometric standards observed on the night of observation. $APCOR$ is an aperture correction term calculated by \textsc{imcore}, which uses the curve-of-growth of stellar sources to determine the correction required to transform the chosen aperture measurement to total flux. $PERCORR$ is a sky calibration correction, obtained by comparing dark sky regions with the median across each CCD. $ZP$, $APCOR$ and $PERCORR$ are all provided in the catalogue headers. \textsl{Too much information?}
-
-\subsubsection{Full-width at half-maximum}
-\label{subsubsec:parameter_fwhm}
-Initially the parameters of genuine sources in IPHAS frames were determined by
-fitting elliptical two-dimensional Gaussian profiles to each source detected by
-\textsc{imcore}, building up lists of best fit parameters for the purpose of
-generating realistic artificial sources.
-
-Parameters of sources were excluded from the lists if they exhibited one of the
-following behaviours: \begin{itemize}\itemsep \item Source position returned
-further than 5 pixels from the position reported by \textsc{imcore} \\- these
-fits are likely to have been disturbed by nearby sources \item Object where the
-peak value of the best-fit Gaussian is $>55000$ counts \\- this is the regime
-for the WFC where bright sources saturate, distorting the PSF. \item If the
-position angle is measured to be exactly zero \\- in these cases the fit is
-assumed to have failed. \end{itemize}
-
-The best fit FWHM values returned for the semi-major and semi-minor axes of the
-sources were gathered, and Gaussians fit to their distributions. Fig.
-\ref{fig:parameter_fwhm} shows the distributions for four IPHAS fields, in
-addition to the central positions of the best fit Gaussians.
-
-\begin{figure} 
-\begin{center}
-\includegraphics[width=1.0\linewidth]{figures/parameter_fwhm.pdf}
-\caption{\footnotesize Distribution of best fitting FWHM values in arcseconds for sources from four randomly selected IPHAS DR2 fields. Values were obtained by fitting elliptical Gaussians to every stellar source in CCD4 of the IPHAS
-field. FWHM values reported here are for the Gaussian profile along the semi-
-major axes of the sources. \textbf{Red lines} denote the median FWHM as
-determined by \textsc{imcore} for CCD4. \textbf{Green shaded areas} highlight the regions centred on the best fit FWHM for the distributions, and encompass the area $\pm\sigma$.} 
-\label{fig:parameter_fwhm} 
-\end{center} 
-\end{figure}
-
-This would work across all fields, but the fitting of 2D Gaussians to each
-source in the frame took too long. Since the FWHM values obtained in this way
-were in good agreement with the median FWHM as determined by \textsc{imcore}, it was decided that taking this value as representative of the entire field was
-sufficient. Fig. \ref{fig:parameter_fwhm} shows how the median FWHM values
-fall within 1$\sigma$ of the best fit Gaussian distributions for four randomly
-selected IPHAS DR2 fields.
-
-\subsubsection{Ellipticity}
-\label{subsubsec:ellipticity}
-\begin{figure} 
-\begin{center}
-\includegraphics[width=1.0\linewidth]{figures/parameter_ell.pdf}
-\caption{\footnotesize Distribution of ellipticities for all stellar sources in
-four randomly selected IPHAS fields. Ellipticities were computed from the
-profiles of the elliptical Gaussians best fitting each object along their semi-
-major and -minor axes. \textbf{Red lines} denote the median ellipticities for
-CCD4 of each field as determined by \textsc{imcore.}} 
-\label{fig:parameter_ell}
-\end{center} 
-\end{figure}
-
-The treatment of ellipticity followed that of FWHM values; although a reliable measure of field-wide ellipticity was determined from the median of the best-fit FWHM values across the field and the relation
-\begin{equation}
-e=1-\frac{\mathrm{FWHM}_{min}}{\mathrm{FWHM}_{maj}}
-\label{eq:ellipticity}
-\end{equation}
-\noindent (where FWHM$_{min}$ and FWHM$_{maj}$ are the full-width half-maxima along sources' semi-minor and semi-major axes respectively).
-
-Fig. \ref{fig:parameter_ell} shows the distributions of ellipticities as
-determined by Equation \ref{eq:ellipticity} and the FWHM values determined in
-Section \ref{subsubsec:parameter_fwhm}. The median ellipticity value as
-determined by \textsc{imcore} is denoted by a red line. It can be seen that the
-median values for three of the four test fields are slightly optimistic (i.e.
-underestimate the ellipticities measured from 2D Gaussian fits). Owing to the
-fact fields displaying ellipticities greater than 0.3 were excluded from release in DR2, the slight mismatch between the median of the fitted ellipticities and the comparatively optimistic median calculated by \textsc{imcore} will never be so large that it will significantly affect the recovery of sources.
-
-\textit{Seems a bit weak. But returned magnitude shouldn't really be affected by ellipticity - we're not PSF fitting each source. Position might be affected,
-but only by a very small amount.}
-
-\subsubsection{Position angle}
-\label{subsubsec:potition_angle}
-Conclusion in thesis is that most fields' PA distributiuons are too flat (or
-at least not nicely Gaussian) to confidently obtain a PA, so it's dropped. Is
-such a subsection even worth including here?
-
-\subsubsection{Position}
-\label{subsubsec:position}
-Object $x$ and $y$ pixel positions were drawn randomly from uniform
-distributions across the 2048$\times$4096 pixels of the WFC CCDs.
-
-As the completeness calculated for CCD 4 of each field was taken as representative of the completeness over all four chips, the only problem region
-in placing sources was the border regions. \textsl{Include plot of used region
-of all 4 CCDs here or in map generation section}. A 10$^{\prime\prime}$ border
-was excluded around the CCD edge; this area potentially contains truncated
-sources, and as such was not permitted to contribute sources to the density map.
+Table \ref{table:number_artificial} details $N$, the number of sources inserted per image, and $M$, the number 
+of artificial images generated for reprocessing and recovery for each magnitude bin. $N$ rises  
+with increasing magnitude and is capped at 50 at the faint end for the reasons discussed above. To accumulate a 
+larger number of sources injected in the faintest bins, and minimize noise where the most significant corrections 
+arise, $M$ increases from 10 to 15 at $m_0 = 19.5$, and then to 20 at $m_0 = 20.0$.  This setup requires around 
+2.2 hours ($\sim$20 s $\times$ 410 \textsc{imcore} runs). For the 14,115 fields that make up DR2, this results in 
+a total computing time of $\sim$31000 hours. Utilizing 128 CPUs simultaneously brings the total time to estimate 
+completeness for the entire survey in a single band to $\sim$10 days.
 
 \subsection{Recovery of simulated sources}
 \label{subsec:recovery}
 
-Cross-matching the recovered sources to the added artificial sources required the imposing of matching thresholds in both position and brightness. While a recovered source should lie centred on the exact $x$,$y$ pixel position where it was added, there is no guarantee that \textsc{imcore} will report its centroid to lie at these coordinates. Background variations in the original image and pixel binning may cause the reported centroid to shift by a small amount; a generous threshold was adopted of 5 pixels from the recorded position of inserted sources.
+Cross-matching the recovered sources to the added artificial sources required the imposing of matching thresholds 
+in both position and brightness. While ideally a recovered source should lie centred on the exact $x$,$y$ pixel 
+position where it was added, there is no guarantee that \textsc{imcore} will report unchanged centroid coordinates. 
+Background variations in the original image, pixel binning and blending may cause the reported centroid to shift 
+by a small amount: hence, a generous upper limit of 5 pixels was set on this shift away from the recorded 
+position of inserted sources.  {\bf JED: what was a typical shift?  ...might be worth a mention to reassure the 
+reader.} 
 
-Simply cross-referencing the recorded position of an artificial source with
-the new set of catalogues was not sufficient to ensure that a source had been
-sucessfully recovered. Including the magnitude of the source inserted in the
-comparison added an additional constraint which helped to reduce spurious
-crossmatches between the artificial source and pre-existing nearby sources of
-different magnitudes.
+Simply cross-referencing the recorded position of an artificial source with the new set of catalogues was not 
+sufficient to ensure sucessfully recovery. A constraint on the difference between the recovered magnitude, $m_rec$ 
+of the source and its insertion value $m_0$ is needed too, in order to reduce spurious crossmatches between added 
+sources and pre-existing nearby sources (typically of different brightness).  Choosing a bound on this offset, 
+$\Delta_m = m_{rec} - m_0$, was more involved than for pixel position.  Previous attempts to use artificial photometry 
+to understand incompleteness have faced similar issues.  For example, \citet{Mateo1986}, as part of a study of a 
+globular cluster in the Large Magellanic Cloud, added artificial stars to images using \textsc{DAOPHOT}: they considered 
+a source recovered if it was returned at the same coordinates at a magnitude within 0.5 of the inserted value. 
+\citet{Harvey2006} used this approach in a study of stellar sources in the Serpens molecular cloud, and plotted 
+the modulus of the average difference for artificial sources injected into their data, finding a range from 
+0.1 mag at $\sim$10-13 mag to more than 0.5 mag at $\sim$15 mag.
 
-Choosing threshold an on offset in magnitude space ($\Delta_m$) was more involved than in pixel position. Previous attempts to use artificial photometry in this way have faced similar issues; \citet{Mateo1986}, as part of a study of a globular cluster in the LMC, added artificial stars to their
-images using \textsc{DAOPHOT}. They considered an source recovered if an
-source was returned at the same coordinates within 0.5 mag. \citet{Harvey2006}
-used this approach in a study of stellar sources in the Serpens molecular
-cloud, and plotted the average difference ($\mid mag_{obs}-mag_{injected}\mid$) for artificial sources injected into their data, finding a range from 0.1 mag at $\sim$10-13 mag to more than 0.5 mag at $\sim$15 mag.
-
-For each field, the distribution of $\Delta_m$ values was binned and the modal
-value determined. For a number of fields, the modal value reached $\approx$0.4
+For each field, the distribution of the modulus of $\Delta_m$ was binned up and the 
+modal value determined. For a number of fields, the modal value reached $\approx$0.4
 mag - an effect that would require a $\Delta_m$ tolerance of $>$0.5 mag. Such
 a large tolerance would likely result in many spurious cross-matches and hence
 an unduly optimistic estimate of completeness fractions, especially at fainter
@@ -906,33 +964,39 @@ drop entirely.}}}
 In the course of investigating whether field conditions correlated with the
 offset of the $\Delta_m$ distribution, the modal shift value for each field
 was plotted against a number of field parameters. The resulting plots, seen in
-Fig. \ref{fig:magdiff_parameters}, clearly show that the remaining offset to
-the recovered magnitudes correlates with increasingly poor seeing conditions.
-
-Poor seeing was found to affect the measured PSF such that the returned
-magnitudes from an image were offset by a uniform amount rather than having
-their spread increased - this is illustrated by the tightness of the
-correlation between $\Delta_m$ values and seeing, up to the highest seeing
+Fig. \ref{fig:magdiff_parameters}, clearly show that the modal offset in $\Delta_m$
+correlates most strongly with the PSF FWHM (the 'seeing').  The relationship
+is such that the returned magnitudes from an image are offset by a uniform amount 
+rather than showing increased spread - this lies behind the tightness seen in 
+the correlation between $\Delta_m$ values and PSF FWHM, up to the highest
 values encountered in the survey. This justified the application of a uniform
-shift to all measured magnitudes from an image, applied to bring the median
-$\Delta_m$ of a field to zero.
+shift to all measured {\bf recovered?} magnitudes from an image, applied to bring 
+the median $\Delta_m$ of a field to zero.
 
-Having reduced the systematic shifts to $\Delta_m$ values, a threshold value
-needed to be chosen for considering an artificial source recovered. As
-illustrated in Fig. \ref{fig:magnitude_match}, the completeness curves
+Having reduced the systematic shifts to $\Delta_m$ values, a bound on the acceptable
+corrected difference $\Delta_m$ still needs to be set. As illustrated in 
+Fig. \ref{fig:magnitude_match}, the completeness curves
 remain relatively unchanged at $r^{\prime}\lesssim19$ as the $\Delta_m$ threshold is
 varied between 0.5 and 0.1 mag (the magnitude range of interest for correcting
 the density map). A threshold value of 0.25 mag was chosen as a compromise
-between avoiding admitting a large number of spurious detections at the faint
+between avoiding acceptance of a large number of spurious detections at the faint
 end of the magnitude distribution, and ensuring that few objects are missed
 due to the occasional large $\Delta_m$ value.
 
+{\bf JED: the figure can lose the blue lines, and become a single panel}
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=1\linewidth]{figures/magnitude_match.pdf} 
-\caption{\footnotesize{$r^{\prime}$-band completeness fractions (\textbf{green}) for IPHAS field 4121o\_jul2009, with offset tolerances between inserted and recovered magnitudes of 0.5, 0.25, and 0.1 mag (from left to right). \textbf{Blue:} Completeness fraction before implementing the scaling to total flux vs. magnitude relation (see Section \ref{subsubsec:flux}) and the shift to account for the effect of seeing (see Section \ref{subsec:recovery}). \textbf{Green:} Completeness fraction after applying these corrections. \newline
-\textit{The point of this plot is currently to emphasise the effect of scaling to total flux rather than peak height. But if we're not mentioning peak height at all then this plot should be regenerated with only the green lines, to show the effect of changing matching tolerance.}}}
+\caption{\footnotesize{$r^{\prime}$-band completeness fractions (\textbf{green}) for IPHAS 
+field 4121o\_jul2009, with offset tolerances between inserted and recovered magnitudes of 0.5, 
+0.25, and 0.1 mag (from left to right). \textbf{Blue:} Completeness fraction before 
+implementing the scaling to total flux vs. magnitude relation (see Section \ref{subsubsec:flux}) 
+and the shift to account for the effect of seeing (see Section \ref{subsec:recovery}). 
+\textbf{Green:} Completeness fraction after applying these corrections. \newline
+\textit{The point of this plot is currently to emphasise the effect of scaling to total flux rather 
+than peak height. But if we're not mentioning peak height at all then this plot should be regenerated 
+with only the green lines, to show the effect of changing matching tolerance.}}}
 \label{fig:magnitude_match}
 \end{center}
 \end{figure}
