@@ -744,7 +744,7 @@ the curve-of-growth of stellar sources to determine the correction required to t
 total flux (suitable reference). $PERCORR$ is a sky calibration correction, obtained by comparing dark sky regions with the 
 median across each CCD. $ZP$, $APCOR$ and $PERCORR$ are all taken from the pre-existing catalogue headers.
 
-\subsubsection{Full-width at half-maximum}
+\subsubsection{PSF shape parameters: Full-width at half-maximum and ellipticity}
 \label{subsubsec:parameter_fwhm}
 
 Initially the parameters of genuine sources in IPHAS frames were determined by
@@ -763,11 +763,8 @@ circular (JED comment)??}\end{itemize}
 
 The best fit full-width half maximum (FWHM) values returned for the semi-major and 
 semi-minor axes of the sources were gathered for each of the fields entering this 
-exploration, and Gaussians were then fit to the distribution to recover $\sigma$. 
-{\bf Hywel - why fit to Gaussians - can just read off median values, compute means 
-etc from the raw distribution data?  Or do I horribly mis-read what you are trying 
-to say.  Are we talking of 2 separate distributions per field for semi-major and 
-semi-minor axis FWHM?}. 
+exploration, and Gaussians were then fit to the distribution to recover the distribution
+mean and $\sigma$. 
 %Fig.
 %\ref{fig:parameter_fwhm} shows the distributions for four IPHAS fields, in
 %addition to the central positions of the best fit Gaussians.
@@ -778,56 +775,57 @@ semi-minor axis FWHM?}.
 %\caption{\footnotesize Distribution of best fitting FWHM values in arcseconds for sources from four randomly selected IPHAS DR2 fields. Values were obtained by fitting elliptical Gaussians to every stellar source in CCD4 of the IPHAS
 %field. FWHM values reported here are for the Gaussian profile along the semi-
 %major axes of the sources. \textbf{Red lines} denote the median FWHM as
-%determined by \textsc{imcore} for CCD4. \textbf{Green shaded areas} highlight the regions centred on the best fit FWHM for the distributions, and encompass the area $\pm\sigma$.} 
+%determined by \textsc{imcore} for CCD4. \textbf{Green shaded areas} highlight the regions centred on the best fit FWHM 
+%for the distributions, and encompass the area $\pm\sigma$.} 
 %\label{fig:parameter_fwhm} 
 %\end{center} 
 %\end{figure}
 
-However, it quickly became apparent that the median(???) FWHM values obtained in this way
-were in good agreement with those determined by \textsc{imcore}.  Hence it was decided 
-that it was not necessary to recompute this, and that taking the pipeline-specified value as 
-representative of each entire field was sufficient for our purposes. 
+This exercise quickly revealed that the median(???) FWHM values obtained in this way
+were in good agreement with those determined by \textsc{imcore}, confirming that the pipeline-specified 
+value can be re-used safely for articial source generation. 
 %Fig. \ref{fig:parameter_fwhm} shows how the median FWHM values fall within 1$\sigma$ of the best fit Gaussian distributions for four randomly
 %selected IPHAS DR2 fields.
 
-\subsubsection{Ellipticity}
-\label{subsubsec:ellipticity}
-\begin{figure} 
-\begin{center}
-\includegraphics[width=1.0\linewidth]{figures/parameter_ell.pdf}
-\caption{\footnotesize Distribution of ellipticities for all stellar sources in
-four randomly selected IPHAS fields. Ellipticities were computed from the
-profiles of the elliptical Gaussians best fitting each object along their semi-
-major and -minor axes. \textbf{Red lines} denote the median ellipticities for
-CCD4 of each field as determined by \textsc{imcore.}} 
-\label{fig:parameter_ell}
-\end{center} 
-\end{figure}
+%\subsubsection{Ellipticity}
+%\label{subsubsec:ellipticity}
+%\begin{figure} 
+%\begin{center}
+%\includegraphics[width=1.0\linewidth]{figures/parameter_ell.pdf}
+%\caption{\footnotesize Distribution of ellipticities for all stellar sources in
+%four randomly selected IPHAS fields. Ellipticities were computed from the
+%profiles of the elliptical Gaussians best fitting each object along their semi-
+%major and -minor axes. \textbf{Red lines} denote the median ellipticities for
+%CCD4 of each field as determined by \textsc{imcore.}} 
+%\label{fig:parameter_ell}
+%\end{center} 
+&\end{figure}
 
-The treatment of ellipticity followed that of FWHM values; although a reliable measure of field-wide ellipticity was 
-determined from the median of the best-fit FWHM values across the field and the relation
+The treatment of ellipticity followed that of FWHM values -- constructing a reliable measure of field-wide ellipticity  
+from the median of the best-fit FWHM values across the field and the relation
 \begin{equation}
 e=1-\frac{\mathrm{FWHM}_{min}}{\mathrm{FWHM}_{maj}}
 \label{eq:ellipticity}
 \end{equation}
 \noindent (where FWHM$_{min}$ and FWHM$_{maj}$ are the full-width half-maxima along sources' semi-minor and semi-major 
-axes respectively).
+axes respectively).  In similar vein, comparisons with ellipticities returned by the pipeline indicated that these too 
+were in good enough agreement to give confidence that they coud be re-used in artificial source generation.
 
-Fig. \ref{fig:parameter_ell} shows the distributions of ellipticities as
-determined by Equation \ref{eq:ellipticity} and the FWHM values determined in
-Section \ref{subsubsec:parameter_fwhm}. The median ellipticity value as
-determined by \textsc{imcore} is denoted by a red line. It can be seen that the
-median values for three of the four test fields are slightly optimistic (i.e.
-underestimate the ellipticities measured from 2D Gaussian fits). Owing to the
-fact fields displaying ellipticities greater than 0.3 were excluded from release 
-in DR2, the slight mismatch between the median of the fitted ellipticities and the 
-comparatively optimistic median calculated by \textsc{imcore} will never be so large 
-that it will significantly affect the recovery of sources.
+%Fig. \ref{fig:parameter_ell} shows the distributions of ellipticities as
+%determined by Equation \ref{eq:ellipticity} and the FWHM values determined in
+%Section \ref{subsubsec:parameter_fwhm}. The median ellipticity value as
+%determined by \textsc{imcore} is denoted by a red line. It can be seen that the
+%median values for three of the four test fields are slightly optimistic (i.e.
+%underestimate the ellipticities measured from 2D Gaussian fits). Owing to the
+%fact fields displaying ellipticities greater than 0.3 were excluded from release 
+%in DR2, the slight mismatch between the median of the fitted ellipticities and the 
+%comparatively optimistic median calculated by \textsc{imcore} will never be so large 
+%that it will significantly affect the recovery of sources.
 
-\textit{Seems a bit weak. But returned magnitude shouldn't really be affected by 
-ellipticity - we're not PSF fitting each source. Position might be affected, but only by 
-a very small amount.  JED - it is actually all rather confusing just now... see
-email: the clear up will need to start in the previous sub-section.}
+%\textit{Seems a bit weak. But returned magnitude shouldn't really be affected by 
+%ellipticity - we're not PSF fitting each source. Position might be affected, but only by 
+%a very small amount.  JED - it is actually all rather confusing just now... see
+%email: the clear up will need to start in the previous sub-section.}
 
 \subsubsection{Position angle}
 \label{subsubsec:position_angle}
